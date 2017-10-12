@@ -1,0 +1,931 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>sdk/adapter/http.adapter.factory.js - VaccineSurvey</title>
+    <link rel="stylesheet" href="http://yui.yahooapis.com/3.9.1/build/cssgrids/cssgrids-min.css">
+    <link rel="stylesheet" href="../assets/vendor/prettify/prettify-min.css">
+    <link rel="stylesheet" href="../assets/css/main.css" id="site_styles">
+    <link rel="shortcut icon" type="image/png" href="../assets/favicon.png">
+    <script src="http://yui.yahooapis.com/combo?3.9.1/build/yui/yui-min.js"></script>
+</head>
+<body class="yui3-skin-sam">
+
+<div id="doc">
+    <div id="hd" class="yui3-g header">
+        <div class="yui3-u-3-4">
+            
+                <h1><img src="../assets/css/logo.png" title="VaccineSurvey"></h1>
+            
+        </div>
+        <div class="yui3-u-1-4 version">
+            <em>API Docs for: 0.0.1</em>
+        </div>
+    </div>
+    <div id="bd" class="yui3-g">
+
+        <div class="yui3-u-1-4">
+            <div id="docs-sidebar" class="sidebar apidocs">
+                <div id="api-list">
+    <h2 class="off-left">APIs</h2>
+    <div id="api-tabview" class="tabview">
+        <ul class="tabs">
+            <li><a href="#api-classes">Classes</a></li>
+            <li><a href="#api-modules">Modules</a></li>
+        </ul>
+
+        <div id="api-tabview-filter">
+            <input type="search" id="api-filter" placeholder="Type to filter APIs">
+        </div>
+
+        <div id="api-tabview-panel">
+            <ul id="api-classes" class="apis classes">
+            
+                <li><a href="../classes/$adapterFactory.html">$adapterFactory</a></li>
+            
+                <li><a href="../classes/$authenticationFactory.html">$authenticationFactory</a></li>
+            
+                <li><a href="../classes/$authenticationManagerFactory.html">$authenticationManagerFactory</a></li>
+            
+                <li><a href="../classes/$authenticationStorageService.html">$authenticationStorageService</a></li>
+            
+                <li><a href="../classes/$clinicianBlockRandomizer.html">$clinicianBlockRandomizer</a></li>
+            
+                <li><a href="../classes/$clinicianCode.html">$clinicianCode</a></li>
+            
+                <li><a href="../classes/$dispatcherFactory.html">$dispatcherFactory</a></li>
+            
+                <li><a href="../classes/$education.html">$education</a></li>
+            
+                <li><a href="../classes/$healthcareProviderContent.html">$healthcareProviderContent</a></li>
+            
+                <li><a href="../classes/$helpers.html">$helpers</a></li>
+            
+                <li><a href="../classes/$httpAdapterFactory.html">$httpAdapterFactory</a></li>
+            
+                <li><a href="../classes/$httpClientFactory.html">$httpClientFactory</a></li>
+            
+                <li><a href="../classes/$jobAuditLogging.html">$jobAuditLogging</a></li>
+            
+                <li><a href="../classes/$mockServerFactory.html">$mockServerFactory</a></li>
+            
+                <li><a href="../classes/$modelFactory.html">$modelFactory</a></li>
+            
+                <li><a href="../classes/$questionCategory.html">$questionCategory</a></li>
+            
+                <li><a href="../classes/$questionCode.html">$questionCode</a></li>
+            
+                <li><a href="../classes/$questionType.html">$questionType</a></li>
+            
+                <li><a href="../classes/$race.html">$race</a></li>
+            
+                <li><a href="../classes/$searchAuditLogging.html">$searchAuditLogging</a></li>
+            
+                <li><a href="../classes/$sendGrid.html">$sendGrid</a></li>
+            
+                <li><a href="../classes/$setting.html">$setting</a></li>
+            
+                <li><a href="../classes/$survey.html">$survey</a></li>
+            
+                <li><a href="../classes/$surveyAnswer.html">$surveyAnswer</a></li>
+            
+                <li><a href="../classes/$surveyQuestion.html">$surveyQuestion</a></li>
+            
+                <li><a href="../classes/$surveyQuestionSkipLogic.html">$surveyQuestionSkipLogic</a></li>
+            
+                <li><a href="../classes/$topic.html">$topic</a></li>
+            
+                <li><a href="../classes/$twilio.html">$twilio</a></li>
+            
+                <li><a href="../classes/$user.html">$user</a></li>
+            
+                <li><a href="../classes/$userAuditLogging.html">$userAuditLogging</a></li>
+            
+                <li><a href="../classes/$userSurvey.html">$userSurvey</a></li>
+            
+                <li><a href="../classes/$userSurveyAnswer.html">$userSurveyAnswer</a></li>
+            
+                <li><a href="../classes/$userSurveyVideo.html">$userSurveyVideo</a></li>
+            
+                <li><a href="../classes/$vaccinationReminder.html">$vaccinationReminder</a></li>
+            
+                <li><a href="../classes/$vaccineSurveySdkDefaultAdapter.html">$vaccineSurveySdkDefaultAdapter</a></li>
+            
+                <li><a href="../classes/$vaccineSurveySdkDispatcher.html">$vaccineSurveySdkDispatcher</a></li>
+            
+                <li><a href="../classes/$video.html">$video</a></li>
+            
+                <li><a href="../classes/$videoAuditLogging.html">$videoAuditLogging</a></li>
+            
+                <li><a href="../classes/Adapter.html">Adapter</a></li>
+            
+                <li><a href="../classes/Authentication.html">Authentication</a></li>
+            
+                <li><a href="../classes/AuthenticationManager.html">AuthenticationManager</a></li>
+            
+                <li><a href="../classes/Dispatcher.html">Dispatcher</a></li>
+            
+                <li><a href="../classes/HttpClient.html">HttpClient</a></li>
+            
+                <li><a href="../classes/MockServer.html">MockServer</a></li>
+            
+                <li><a href="../classes/Model.html">Model</a></li>
+            
+                <li><a href="../classes/ModelRegistry.html">ModelRegistry</a></li>
+            
+                <li><a href="../classes/Resource.html">Resource</a></li>
+            
+                <li><a href="../classes/{Cache}.html">{Cache}</a></li>
+            
+            </ul>
+
+            <ul id="api-modules" class="apis modules">
+            
+                <li><a href="../modules/adapter.html">adapter</a></li>
+            
+                <li><a href="../modules/adapters.html">adapters</a></li>
+            
+                <li><a href="../modules/AP.html">AP</a></li>
+            
+                <li><a href="../modules/authentication.html">authentication</a></li>
+            
+                <li><a href="../modules/config.html">config</a></li>
+            
+                <li><a href="../modules/model.html">model</a></li>
+            
+                <li><a href="../modules/models.html">models</a></li>
+            
+                <li><a href="../modules/ng.html">ng</a></li>
+            
+                <li><a href="../modules/utility.html">utility</a></li>
+            
+                <li><a href="../modules/VaccineSurveySdk.html">VaccineSurveySdk</a></li>
+            
+            </ul>
+        </div>
+    </div>
+</div>
+
+            </div>
+        </div>
+        <div class="yui3-u-3-4">
+                <div id="api-options">
+        Show:
+        <label for="api-show-inherited">
+            <input type="checkbox" id="api-show-inherited" checked>
+            Inherited
+        </label>
+
+        <label for="api-show-protected">
+            <input type="checkbox" id="api-show-protected">
+            Protected
+        </label>
+
+        <label for="api-show-private">
+            <input type="checkbox" id="api-show-private">
+            Private
+        </label>
+        <label for="api-show-deprecated">
+            <input type="checkbox" id="api-show-deprecated">
+            Deprecated
+        </label>
+
+    </div>
+
+
+            <div class="apidocs">
+                <div id="docs-main">
+                    <div class="content">
+                        <h1 class="file-heading">File: sdk/adapter/http.adapter.factory.js</h1>
+
+<div class="file">
+    <pre class="code prettyprint linenums">
+(function(angular) {
+
+  /**
+  Factory that creates http adapters. An http adapter works almost the same as a regular adapter, only it allows some extra features like value interpolation.
+  Unlike a regular adapter, which delegates configurations like headers, params, etc to an http client instance, an http adapter handles those configurations
+  manually. This is because most of the configuration values can have placeholders {{}} for interpolation, so the http adapter will first interpolate all the values,
+  build the request object itself (instead of letting the http client do it) and send everything to the http client once its built.
+
+  @module AP
+  @submodule adapter
+  @class $httpAdapterFactory
+  */
+  angular.module(&quot;AP.adapter&quot;)
+    .factory(&quot;$httpAdapterFactory&quot;, [&quot;$adapterFactory&quot;, &quot;$convertions&quot;, function($adapterFactory, $convertions) {
+
+      function create(options) {
+        /**
+        The http adapter does not have a class constructor it is quite simply a regular adapter with extra behaviour attached to it
+        */
+        var httpAdapter = $adapterFactory.create();
+
+        angular.extend(httpAdapter, {
+
+          /**
+          @property config
+          @type {Object} a configuration object for the http adapter. Its configurable values include things like base url, default headers and query string params, etc.
+          */
+          config: options,
+
+          /**
+          @property interpolationRegexp
+          @type {RegExp} regular expression used to find the string &quot;{{}}&quot; within another string. This enables interpolation.
+          */
+          interpolationRegexp: /{{([^{}]*)}}/g,
+
+          /**
+          @method interpolate
+          @param {String} the string to interpolate values into
+          @param {Object} the interpolation context from which the interpolated values are taken from (i.e. str &quot;{{myId}}&quot; with context {myId: 1})
+          @returns {String} a new string copied from &quot;str&quot; but with interpolated values into it
+          */
+          interpolate: function interpolate(str, context) {
+              /**
+               * Interpolate strings using {{}} notation
+               */
+              var resultStr = str.replace(this.interpolationRegexp, function(match, capture) {
+                var trimmedCapture = capture.trim();
+                var fields = trimmedCapture.split(&quot;.&quot;);
+                var replacementValue = context;
+                var field = undefined;
+                if(fields &amp;&amp; fields.length) {
+                    for(var i= 0; i&lt;fields.length; i++) {
+                        if(replacementValue === undefined) {
+                            break;
+                        }
+                        field = fields[i];
+                        replacementValue = replacementValue[field];
+                    }
+                    return (replacementValue !== undefined) ? replacementValue : &quot;&quot;;
+                } else {
+                    return &quot;&quot;;
+                }
+              });
+              return resultStr;
+          },
+
+          /**
+          Takes the appropiate adapter configuration from a Model based on the name of an action passed as an argument. For example if we wanted the adapter
+          configuration for the action &quot;create&quot; of the Model &quot;Person&quot; it would return that adapter configuration object. In the case of adapter configurations for
+          query scopes, the method will first look for an action with the name given and if none is found by that name then it will attempt to find a query scope
+          with that name.
+
+          @method getConfiguration
+          @param {Model} the model service from which the adapter configuration is taken
+          @param {String} the name of the action within the model whose configuration
+          @returns {Object} the adapter configuration from model for the given action
+          */
+          getConfiguration: function(model, action) {
+            var config = undefined;
+            if(model) {
+              config = model.adapterConfigurations[action];
+              if(!config) {
+                config = model.adapterConfigurations.scopes[action];
+              }
+            }
+            return config;
+          },
+
+          /**
+          Helper method. It evaluates a string that contains a javascript object, for example the string &quot;{id: 1, name: &#x27;Sarah&#x27;}&quot;. Evaluating that string
+          will basically create that object in memory, so the result of parsing the object above would be an object {id: 1, name: &#x27;Sarah&#x27;}.
+          This method is used to parse body payload templates in json format
+
+          @method parseObject
+          @param {String} the string to parse the object from
+          @returns {Object} the result of parsing str
+          */
+          parseObject: function(str) {
+            var result = null, parser = null, xmlDoc = null;
+            if(str &amp;&amp; typeof str === &quot;string&quot;) {
+              result = eval(&#x27;(&#x27;+str+&#x27;)&#x27;);
+            }
+            return result;
+          },
+
+          /**
+          Creates an object with key value pairs where keys are the names of the headers to send in a request and values are the values of those headers.
+          The resulting headers will be a union of the default headers set for the http adapter itself (those headers are taken from the http adapter&#x27;s &quot;config&quot; property)
+          and the headers in the adapter configuration for a specific model/action pair. Also values from the model&#x27;s adapter configuration can override headers from
+          the http adapter. For example, having an http adapter with this headers
+
+          {
+            &quot;Adapter-Header-One&quot;: &quot;foo&quot;,
+            &quot;Adapter-Header-Two&quot;: &quot;bar&quot;
+          }
+
+          and a model with the following adapter configuration for the &quot;create&quot; action
+
+          {
+            adapterConfigurations: {
+              create: {
+                headers: {
+                  &quot;Adpater-Header-Two&quot;: &quot;Some-Other-Stuff&quot;,
+                  &quot;Custom-Header&quot;: &quot;Hello&quot;
+                }
+              }
+            }
+          }
+
+          the resulting object will be
+
+          {
+            &quot;Adapter-Header-One&quot;: &quot;foo&quot;,
+            &quot;Adapter-Header-Two&quot;: &quot;Some-Other-Stuff&quot;,
+            &quot;Custom-Header&quot;: &quot;Hello&quot;
+          }
+
+          Also, any and all headers, from the http adapter or the model&#x27;s adapter configuration can have values with the &quot;{{}}&quot; placeholder
+
+          @method buildHeaders
+          @param {Object} an adapter configuration for some action on some Model (which adapter configuration in which Model is irrelevant)
+          @param {Object} an object to act as interpolation context in the event that some header values require interpolated values
+          @returns {Object} key/value pair object where keys are header names and values are the values for those headers
+          */
+          buildHeaders: function(config, context) {
+            var headers = {}, iName, iValue, _this = this;
+            if(this.config &amp;&amp; this.config.headers) {
+              angular.forEach(this.config.headers, function(value, name) {
+                if(name &amp;&amp; value) {
+                  if(context) {
+                    name = _this.interpolate(name, context);
+                    value = _this.interpolate(value, context);
+                  }
+                  headers[name] = value;
+                }
+              });
+            }
+            if(config) {
+              angular.forEach(config.headers, function(value, name) {
+                if(name &amp;&amp; value) {
+                  if(context) {
+                    name = _this.interpolate(name, context);
+                    value = _this.interpolate(value, context);
+                  }
+                  headers[name] = value;
+                }
+              });
+            }
+            return headers;
+          },
+
+          /**
+          Creates an Object where keys are query string parameters&#x27;s name and their corresponding value. Like with headers the resulting Object will inlcude params
+          from the http adapter&#x27;s default params as well as params from the adapter configuration passed as an argument. The adapter configuration&#x27;s params can override
+          the default configuration in the http adapter. (See the example in &quot;buildHeaders&quot; as it works the same way).
+
+          Params can have interpolation placeholders &quot;{{}}&quot; so values will be interpolated in
+
+          @method buildParams
+          @param {Object} an adapter configuration for some action on some Model (which adapter configuration in which Model is irrelevant)
+          @param {Object} an object to act as interpolation context in the event that some header values require interpolated values
+          @returns {Object} key/value pair object where keys are query string parameter names and values are the values for those parameters
+          */
+          buildParams: function(config, context) {
+            var params = {}, iName, iValue, _this = this;
+            if(this.config &amp;&amp; this.config.params) {
+              angular.forEach(this.config.params, function(value, name) {
+                if(name &amp;&amp; value) {
+                  if(context) {
+                    name = _this.interpolate(name, context);
+                    value = _this.interpolate(value, context);
+                  }
+                  params[name] = value;
+                }
+              });
+            }
+            if(config &amp;&amp; config.params) {
+              angular.forEach(config.params, function(value, name) {
+                if(name &amp;&amp; value) {
+                  if(context) {
+                    name = _this.interpolate(name, context);
+                    value = _this.interpolate(value, context);
+                  }
+                  params[name] = value;
+                }
+              });
+            }
+            return params;
+          },
+
+          /**
+          Creates a full url from the url in the http adapter&#x27;s config object and the incrementalPath taken from an adapter configuration passed
+          as an argument. Also interpolates values into that full url if &quot;{{}}&quot; placeholders are present in the url.
+
+          @method buildUrl
+          @param {Object} an adapter configuration for some action on some Model (which adapter configuration in which Model is irrelevant)
+          @param {Object} an object to act as interpolation context in the event that some header values require interpolated values
+          @returns {String} the full url where the request will be sent to
+          */
+          buildUrl: function(config, context) {
+            var url = &quot;&quot;;
+            if(this.config &amp;&amp; this.config.url) {
+              url += this.config.url;
+            }
+            if(config &amp;&amp; config.incrementalPath) {
+              url += config.incrementalPath;
+            }
+            if(context) {
+              url = this.interpolate(url, context);
+            }
+            return url;
+          },
+
+          /**
+          Creates an object to send as a request&#x27;s data. The data object is created from the request field mappings defined in the adapter configuration
+          passed as an argument. It also supports value interpolation in the mappings.
+          This method is used whenever a body payload template is not specified for the adapter configuration argument.
+          Request field mappings map the fields from the recieved context to another name.
+          For example, given the following request field mappings:
+            {
+              id: &quot;foo&quot;,
+              name: &quot;bar&quot;,
+              age: &quot;{{name}}&quot;
+            }
+          And a context:
+            {
+              id: 1,
+              name: &quot;Helen&quot;,
+              age: 30
+            }
+          It will yield the following data object to send in the request:
+            {
+              foo: 1,
+              bar: &quot;Helen&quot;,
+              Helen: 30
+            }
+          If the format of the request is xml then that final object will be converted to an xml string with this structure
+          The value if the field &quot;objectNameMapping&quot; is used as a top level node in this case
+          Assuming an objectNameMapping = &quot;person&quot;
+
+          &lt;person&gt;
+            &lt;foo&gt;1&lt;/foo&gt;
+            &lt;bar&gt;Helen&lt;/bar&gt;
+            &lt;Helen&gt;30&lt;/Helen&gt;
+          &lt;/person&gt;
+
+          @method buildRequestMappings
+          @param {Object} an adapter configuration for some action on some Model (which adapter configuration in which Model is irrelevant)
+          @param {Object} an object to act as interpolation context in the event that some header values require interpolated values
+          @returns {Object}/{String} the object to send as data within the request or an xml string version of that same object
+          */
+          buildRequestMappings: function(config, context) {
+            var data = {}, mappedName, _this = this;
+            if(config &amp;&amp; config.requestFieldLevelMappings) {
+              angular.forEach(config.requestFieldLevelMappings, function(mapping, name) {
+                if(context) {
+                  var interpolationResult = undefined;
+                  interpolationResult = _this.interpolate(mapping, context);
+                  if(interpolationResult &amp;&amp; interpolationResult != &quot;&quot;) {
+                    mapping = interpolationResult;
+                  }
+                }
+                data[mapping] = context[name];
+              });
+            }
+
+            if(config.format === &quot;xml&quot;) {
+              data = $convertions.objectToXml(config.objectNameMapping, data);
+            }
+
+            return data;
+          },
+
+          /**
+          Creates the data to send in a request out of a body payload template in the adapter configuration passed as a parameter.
+          Unlike &quot;buildRequestMappings&quot; the structure of the resulting object is defined by the template itself and all that is done
+          is interpolating values into that template.
+          If the format of the request is json then once values are interpolated in the template string will be parsed into an actual
+          object literal to send as data. If its xml then the returned data will be a string.
+
+          @method buildBodyPayload
+          @param {Object} an adapter configuration for some action on some Model (which adapter configuration in which Model is irrelevant)
+          @param {Object} an object to act as interpolation context in the event that some header values require interpolated values
+          @returns {Object}/{String} the object literal to send as data (json) or the xml string to send as data (xml)
+          */
+          buildBodyPayload: function(config, context) {
+            var bodyPayload = null;
+            if(config &amp;&amp; config.bodyPayload &amp;&amp; config.bodyPayload !== &quot;&quot;) {
+              bodyPayload = config.bodyPayload;
+              if(context) {
+                bodyPayload = this.interpolate(bodyPayload, context);
+              }
+              if(config.format === &quot;json&quot;) {
+                bodyPayload = this.parseObject(bodyPayload);
+              }
+            }
+            return bodyPayload;
+          },
+
+          /**
+          Creates the entire request configuration to pass to the {HttpClient} to be sent to the server. It builds the request headers, query string parameters,
+          url, data and adds the appropiate content type header according to the format of the request. The created request is based on both the http adapter&#x27;s
+          config object and the adapter configuration passed as an argument.
+
+          @method buildRequest
+          @param {Object} an adapter configuration for some action on some Model (which adapter configuration in which Model is irrelevant)
+          @param {Object} an object to act as interpolation context in the event that some header values require interpolated values
+          @returns {Object} a request configuration object to pass to an {HttpClient}
+          */
+          buildRequest: function(config, context) {
+            var request = {}, headers = {}, params = {}, data = {}, url, method;
+            headers = this.buildHeaders(config, context);
+            params = this.buildParams(config, context);
+            url = this.buildUrl(config, context);
+            method = config.httpVerb;
+            if(method !== &quot;GET&quot;) {
+              if(config.bodyPayload &amp;&amp; config.bodyPayload != &quot;&quot;) {
+                data = this.buildBodyPayload(config, context);
+              } else {
+                data = this.buildRequestMappings(config, context);
+              }
+            }
+            switch(config.format) {
+              case &quot;xml&quot;:
+                headers[&quot;Content-Type&quot;] = &quot;application/xml&quot;;
+                break;
+              case &quot;form_encoded&quot;:
+                headers[&quot;Content-Type&quot;] = &quot;application/x-www-form-urlencoded; charset=UTF-8&quot;;
+                break;
+              case &quot;json&quot;:
+              default:
+                headers[&quot;Content-Type&quot;] = &quot;application/json&quot;;
+                break;
+            }
+            request = {
+              method: method,
+              url: url,
+              headers: headers,
+              params: params,
+              data: data
+            }
+            return request;
+          },
+
+          /**
+          Evaluates an XPath or JSONPath expression on a response data object. Whether the path selector is XPath or JSONPath is infered from
+          the format of the adapter configuration that is passed along with the response data.
+          This feature requires external libraries (both included with the SDK):
+            for JSON  -&gt; jsonPath
+            for XML   -&gt; wicked-good-xpath
+
+          @method getPathFromSelector
+          @param {Object} an object holding some response data from the server
+          @param {Object} an adapter configuration for some action on some Model (which adapter configuration in which Model is irrelevant)
+          @returns {Array}/{XPathResult} An array of javascript objects which are the result of evaluating the expression (in the case of json) or an
+                        {XPathResult} object (in case of xml)
+          */
+          getPathFromSelector: function(response, config) {
+            var selectedPath = undefined, selector=undefined;
+            if(response &amp;&amp; config) {
+              if(config.pathSelector === &quot;&quot;) {
+                if(config.format == &quot;json&quot;) {
+                  selector = &quot;$..&quot;;
+                } else if(config.format == &quot;xml&quot;) {
+                  selector = &quot;/&quot;;
+                }
+              } else {
+                selector = config.pathSelector;
+              }
+              if(config.format === &quot;xml&quot;) {
+                //evaluate XPath expression
+                //document.evaluate must be available for this kind of expressions (for Internet Explorer you need to use wicked-good-xpath)
+                if(document.evaluate) {
+                  selectedPath = document.evaluate(selector, response);
+                }
+              } else if(config.format === &quot;json&quot;) {
+                //evaluate JSONPath expression
+                if(window.jsonPath) {
+                  selectedPath = jsonPath(response, selector);
+                }
+              }
+            }
+            return selectedPath;
+          },
+
+          /**
+          Analogous to &quot;buildRequestMappings&quot; but used to map the values recieved from a response into the fields of a context.
+          The response mappings do NOT allow interpolation on the mapping name, however you can set an XPath or JSONPath expression
+          as a mapping so you can select any fragment of the response to map to a field.
+          In the case of an XML response, and response field mappings with XPath expressions, the result of evaluating the XPath expression
+          is not a text node, the value of the mapped field will be a string representation of the node structure.
+          For example:
+
+            If the response is:
+
+            &lt;person&gt;
+              &lt;name&gt;John&lt;/name&gt;
+              &lt;description&gt;
+                &lt;short&gt;A short version of the description&lt;/short&gt;
+                &lt;large&gt;
+                  A much larger description going in depth...
+                &lt;/large&gt;
+              &lt;/description&gt;
+            &lt;/person&gt;
+
+            and the following response mappings:
+
+            {
+              name: &quot;/person/name/text()&quot;,
+              description: &quot;/person/description&quot;
+            }
+
+            The resulting object will be:
+
+            {
+              name: &quot;John&quot;,
+              description: &quot;&lt;short&gt;A short version of the description&lt;/short&gt;&lt;large&gt;A much larger description going in depth...&lt;/large&gt;&quot;
+            }
+
+            The selected response passed as a first argument is the result of evaluating the pathSelector in the adapter configuration
+            on the full response from the server.
+            There are two levels of expression evaluation:
+              1) The pathSelector, specified in the adapter configuration, is evaluated on the actual response from the server and
+                  returns just a fragment/s of the entire response
+              2) Out of that fragment/s gotten from the first evaluation, if any response field mappings have expressions as mappings, then that
+                  expression is evaluated on the fragment/s of the response not the entire response (unless the fragment is equal to the entire response)
+
+
+            @method mapResponse
+            @param {Object} the selected response after evaluating the &quot;pathSelector&quot; on the entire response
+            @param {Object} an adapter configuration for some action on some Model (which adapter configuration in which Model is irrelevant)
+            @returns {Object} data to use in a Model instance or {Resource} object
+          */
+          mapResponse: function(selectedResponse, config) {
+            var mapped = {}, _this = this;
+            if(selectedResponse &amp;&amp; config &amp;&amp; config.responseFieldLevelMappings) {
+              angular.forEach(config.responseFieldLevelMappings, function(mappingValue, mappingName) {
+                var mappedExpression = mappingValue;
+                var selectedResponseFirstElement = undefined;
+                // IF XML...
+                if(config.format === &quot;xml&quot; &amp;&amp; document.evaluate) {
+                  if(selectedResponse) {
+                    mappedExpression = (document.evaluate(mappedExpression, selectedResponse)).iterateNext();
+                  }
+                  // If the response is an xml node then covert it to a string
+                  if(mappedExpression) {
+                    mappedExpression = $convertions.xmlToString(mappedExpression);
+                  }
+                }
+                // IF JSON
+                else if(config.format === &quot;json&quot; &amp;&amp; window.jsonPath) {
+                  mappedExpression = jsonPath(selectedResponse, mappedExpression);
+                  if(mappedExpression &amp;&amp; mappedExpression instanceof Array) {
+                    mappedExpression = mappedExpression[0];
+                  }
+                }
+                mapped[mappingName] = mappedExpression;
+              });
+            }
+            return mapped;
+          },
+
+          /**
+          Handles the response for single element actions (i.e. create, update, etc).
+          It evaluates the &quot;pathSelector&quot; from the adapter configuration passed as an argument on the response passed as an argument.
+          The result from the evaluation is used as a selected response in &quot;mapResponse&quot;.
+          It will return the mapped data for that single element.
+
+          @method handleResponse
+          @param {Object} the response data coming from the server
+          @param {Object} an adapter configuration for some action on some Model (which adapter configuration in which Model is irrelevant)
+          @returns {Object} the mapped data for a {Resource} instance
+          */
+          handleResponse: function(response, config) {
+            var selectedPath = undefined, mapped = undefined;
+            if(config.format === &quot;xml&quot;) {
+              response = $convertions.parseXml(response);
+              selectedPath = this.getPathFromSelector(response, config);
+              if(selectedPath) {
+                var element = selectedPath.iterateNext();
+                mapped = this.mapResponse(element, config);
+              }
+            } else {
+              selectedPath = this.getPathFromSelector(response, config);
+              mapped = this.mapResponse(selectedPath[0], config);
+            }
+            return mapped;
+          },
+
+          /**
+          Handles the response for query scopes.
+          It evaluates the &quot;pathSelector&quot; from the adapter configuration passed as an argument on the response passed as an argument.
+          The result of that evaluation should be a collection. That collection will be iterated over and for each element &quot;mapResponse&quot;
+          will be called using that item in the collection as the selected response.
+          It will return a collection of mapped data.
+
+          @method handleQueryResponse
+          @param {Object} the response data coming from the server
+          @param {Object} an adapter configuration for some action on some Model (which adapter configuration in which Model is irrelevant)
+          @returns {Array} collection of mapped data
+          */
+          handleQueryResponse: function(response, config) {
+            var selectedPath, mappedCollection = [];
+            if(config.format === &quot;xml&quot;) {
+              response = $convertions.parseXml(response);
+              selectedPath = this.getPathFromSelector(response, config);
+              if(selectedPath) {
+                var _this = this;
+                var element = selectedPath.iterateNext();
+                while(element) {
+                  mappedCollection.push(_this.mapResponse(element, config));
+                  element = selectedPath.iterateNext();
+                }
+              }
+            } else {
+              selectedPath = this.getPathFromSelector(response, config);
+              if(selectedPath) {
+                var _this = this;
+                angular.forEach(selectedPath, function(element) {
+                  mappedCollection.push(_this.mapResponse(element, config));
+                });
+              }
+            }
+            return mappedCollection;
+          },
+
+
+          /**
+          Handles the create action of a Model
+
+          @method create
+          @param {Model} the model from where the adapter configuration for the &quot;create&quot; action will be taken
+          @param {Object} the data to send to the server for creation
+          @param {Object} the interpolation context to use to build the request
+          @returns {Promise} the promise returned by the adapter&#x27;s ajax method
+          */
+          create: function(model, data, context) {
+            context = context || {};
+            var config = this.getConfiguration(model, &quot;create&quot;);
+            var options = this.buildRequest(config, context);
+            angular.extend(options, {
+              responseTransformations: [
+                angular.bind(this, function(response) {
+                  if(response) {
+                    return this.handleResponse(response, config, context);
+                  }
+                }),
+                function(response) {
+                  if(response instanceof Object) {
+                    angular.extend(data, response);
+                  }
+                }
+              ]
+            });
+            method = options.method.toLowerCase();
+            return this.ajax(method, model, options);
+          },
+
+          /**
+          Handles the update action of a Model
+
+          @method update
+          @param {Model} the model from where the adapter configuration for the &quot;update&quot; action will be taken
+          @param {Object} the data to send to the server for updating
+          @param {Object} the interpolation context to use to build the request
+          @returns {Promise} the promise returned by the adapter&#x27;s ajax method
+          */
+          update: function(model, data, context) {
+            context = context || {};
+            var config = this.getConfiguration(model, &quot;update&quot;);
+            var options = this.buildRequest(config, context);
+            angular.extend(options, {
+              responseTransformations: [
+                angular.bind(this, function(response) {
+                  if(response) {
+                    return this.handleResponse(response, config, context);
+                  }
+                }),
+                function(response) {
+                  if(response instanceof Object) {
+                    angular.extend(data, response);
+                  }
+                }
+              ]
+            });
+            method = options.method.toLowerCase();
+            return this.ajax(method, model, options);
+          },
+
+          /**
+          Handles the read action of a Model
+
+          @method read
+          @param {Model} the model from where the adapter configuration for the &quot;read&quot; action will be taken
+          @param {Object} the interpolation context to use to build the request
+          @returns {Promise} the promise returned by the adapter&#x27;s ajax method
+          */
+          read: function(model, context) {
+            context = context || {};
+            var config = this.getConfiguration(model, &quot;read&quot;);
+            var options = this.buildRequest(config, context);
+            angular.extend(options, {
+              responseTransformations: [
+                angular.bind(this, function(response) {
+                  if(response) {
+                    return this.handleResponse(response, config, context);
+                  }
+                }),
+                angular.bind(model, model.createResource)
+              ]
+            });
+            method = options.method.toLowerCase();
+            return this.ajax(method, model, options);
+          },
+
+          /**
+          Handles the delete action of a Model
+
+          @method delete
+          @param {Model} the model from where the adapter configuration for the &quot;delete&quot; action will be taken
+          @param {Object} the interpolation context to use to build the request
+          @returns {Promise} the promise returned by the adapter&#x27;s ajax method
+          */
+          delete: function(model, context) {
+            context = context || {};
+            var config = this.getConfiguration(model, &quot;delete&quot;);
+            var options = this.buildRequest(config, context);
+            angular.extend(options, {
+              responseTransformations: [angular.bind(this, function(response) {
+                if(response) {
+                  return this.handleResponse(response, config, context);
+                }
+              })]
+            });
+            method = options.method.toLowerCase();
+            return this.ajax(method, model, options);
+          },
+
+          /**
+          Handles the query scopes for a Model
+
+          @method query
+          @param {Model} the model from where the adapter configuration for the appropiate query scope will be taken
+          @param {String} the name of the query scope being executed
+          @param {Object} the interpolation context to use to build the request
+          @param {Function} callback to be run if the request is successful
+          @param {Function} callback to be run if there is an error
+          @returns {Array} an empty array that will be populated when the response comes from the server
+          */
+          query: function(model, scope, context, success, error) {
+            context = context || {};
+            var config = this.getConfiguration(model, scope);
+            var options = this.buildRequest(config, context);
+            var resource = [];
+            angular.extend(options, {
+              success: success,
+              error: error,
+              responseTransformations: [
+                angular.bind(this, function(response) {
+                  if(response) {
+                    return this.handleQueryResponse(response, config);
+                  }
+                }),
+                angular.bind(model, model.createCollection),
+                function(data) {
+                  if(angular.isArray(data)) {
+                    Array.prototype.push.apply(resource, data);
+                  }
+                  return data;
+                }
+              ]
+            });
+            method = options.method.toLowerCase();
+            this.ajax(method, model, options);
+            return resource;
+          },
+
+        });
+
+        return httpAdapter;
+      }
+
+      return {
+        create: create
+      }
+
+    }]);
+
+})(angular);
+
+    </pre>
+</div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../assets/vendor/prettify/prettify-min.js"></script>
+<script>prettyPrint();</script>
+<script src="../assets/js/yui-prettify.js"></script>
+<script src="../assets/../api.js"></script>
+<script src="../assets/js/api-filter.js"></script>
+<script src="../assets/js/api-list.js"></script>
+<script src="../assets/js/api-search.js"></script>
+<script src="../assets/js/apidocs.js"></script>
+</body>
+</html>

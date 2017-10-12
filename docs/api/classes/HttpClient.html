@@ -1,0 +1,2554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>HttpClient - VaccineSurvey</title>
+    <link rel="stylesheet" href="http://yui.yahooapis.com/3.9.1/build/cssgrids/cssgrids-min.css">
+    <link rel="stylesheet" href="../assets/vendor/prettify/prettify-min.css">
+    <link rel="stylesheet" href="../assets/css/main.css" id="site_styles">
+    <link rel="shortcut icon" type="image/png" href="../assets/favicon.png">
+    <script src="http://yui.yahooapis.com/combo?3.9.1/build/yui/yui-min.js"></script>
+</head>
+<body class="yui3-skin-sam">
+
+<div id="doc">
+    <div id="hd" class="yui3-g header">
+        <div class="yui3-u-3-4">
+            
+                <h1><img src="../assets/css/logo.png" title="VaccineSurvey"></h1>
+            
+        </div>
+        <div class="yui3-u-1-4 version">
+            <em>API Docs for: 0.0.1</em>
+        </div>
+    </div>
+    <div id="bd" class="yui3-g">
+
+        <div class="yui3-u-1-4">
+            <div id="docs-sidebar" class="sidebar apidocs">
+                <div id="api-list">
+    <h2 class="off-left">APIs</h2>
+    <div id="api-tabview" class="tabview">
+        <ul class="tabs">
+            <li><a href="#api-classes">Classes</a></li>
+            <li><a href="#api-modules">Modules</a></li>
+        </ul>
+
+        <div id="api-tabview-filter">
+            <input type="search" id="api-filter" placeholder="Type to filter APIs">
+        </div>
+
+        <div id="api-tabview-panel">
+            <ul id="api-classes" class="apis classes">
+            
+                <li><a href="../classes/$adapterFactory.html">$adapterFactory</a></li>
+            
+                <li><a href="../classes/$authenticationFactory.html">$authenticationFactory</a></li>
+            
+                <li><a href="../classes/$authenticationManagerFactory.html">$authenticationManagerFactory</a></li>
+            
+                <li><a href="../classes/$authenticationStorageService.html">$authenticationStorageService</a></li>
+            
+                <li><a href="../classes/$clinicianBlockRandomizer.html">$clinicianBlockRandomizer</a></li>
+            
+                <li><a href="../classes/$clinicianCode.html">$clinicianCode</a></li>
+            
+                <li><a href="../classes/$dispatcherFactory.html">$dispatcherFactory</a></li>
+            
+                <li><a href="../classes/$education.html">$education</a></li>
+            
+                <li><a href="../classes/$healthcareProviderContent.html">$healthcareProviderContent</a></li>
+            
+                <li><a href="../classes/$helpers.html">$helpers</a></li>
+            
+                <li><a href="../classes/$httpAdapterFactory.html">$httpAdapterFactory</a></li>
+            
+                <li><a href="../classes/$httpClientFactory.html">$httpClientFactory</a></li>
+            
+                <li><a href="../classes/$jobAuditLogging.html">$jobAuditLogging</a></li>
+            
+                <li><a href="../classes/$mockServerFactory.html">$mockServerFactory</a></li>
+            
+                <li><a href="../classes/$modelFactory.html">$modelFactory</a></li>
+            
+                <li><a href="../classes/$questionCategory.html">$questionCategory</a></li>
+            
+                <li><a href="../classes/$questionCode.html">$questionCode</a></li>
+            
+                <li><a href="../classes/$questionType.html">$questionType</a></li>
+            
+                <li><a href="../classes/$race.html">$race</a></li>
+            
+                <li><a href="../classes/$searchAuditLogging.html">$searchAuditLogging</a></li>
+            
+                <li><a href="../classes/$sendGrid.html">$sendGrid</a></li>
+            
+                <li><a href="../classes/$setting.html">$setting</a></li>
+            
+                <li><a href="../classes/$survey.html">$survey</a></li>
+            
+                <li><a href="../classes/$surveyAnswer.html">$surveyAnswer</a></li>
+            
+                <li><a href="../classes/$surveyQuestion.html">$surveyQuestion</a></li>
+            
+                <li><a href="../classes/$surveyQuestionSkipLogic.html">$surveyQuestionSkipLogic</a></li>
+            
+                <li><a href="../classes/$topic.html">$topic</a></li>
+            
+                <li><a href="../classes/$twilio.html">$twilio</a></li>
+            
+                <li><a href="../classes/$user.html">$user</a></li>
+            
+                <li><a href="../classes/$userAuditLogging.html">$userAuditLogging</a></li>
+            
+                <li><a href="../classes/$userSurvey.html">$userSurvey</a></li>
+            
+                <li><a href="../classes/$userSurveyAnswer.html">$userSurveyAnswer</a></li>
+            
+                <li><a href="../classes/$userSurveyVideo.html">$userSurveyVideo</a></li>
+            
+                <li><a href="../classes/$vaccinationReminder.html">$vaccinationReminder</a></li>
+            
+                <li><a href="../classes/$vaccineSurveySdkDefaultAdapter.html">$vaccineSurveySdkDefaultAdapter</a></li>
+            
+                <li><a href="../classes/$vaccineSurveySdkDispatcher.html">$vaccineSurveySdkDispatcher</a></li>
+            
+                <li><a href="../classes/$video.html">$video</a></li>
+            
+                <li><a href="../classes/$videoAuditLogging.html">$videoAuditLogging</a></li>
+            
+                <li><a href="../classes/Adapter.html">Adapter</a></li>
+            
+                <li><a href="../classes/Authentication.html">Authentication</a></li>
+            
+                <li><a href="../classes/AuthenticationManager.html">AuthenticationManager</a></li>
+            
+                <li><a href="../classes/Dispatcher.html">Dispatcher</a></li>
+            
+                <li><a href="../classes/HttpClient.html">HttpClient</a></li>
+            
+                <li><a href="../classes/MockServer.html">MockServer</a></li>
+            
+                <li><a href="../classes/Model.html">Model</a></li>
+            
+                <li><a href="../classes/ModelRegistry.html">ModelRegistry</a></li>
+            
+                <li><a href="../classes/Resource.html">Resource</a></li>
+            
+                <li><a href="../classes/{Cache}.html">{Cache}</a></li>
+            
+            </ul>
+
+            <ul id="api-modules" class="apis modules">
+            
+                <li><a href="../modules/adapter.html">adapter</a></li>
+            
+                <li><a href="../modules/adapters.html">adapters</a></li>
+            
+                <li><a href="../modules/AP.html">AP</a></li>
+            
+                <li><a href="../modules/authentication.html">authentication</a></li>
+            
+                <li><a href="../modules/config.html">config</a></li>
+            
+                <li><a href="../modules/model.html">model</a></li>
+            
+                <li><a href="../modules/models.html">models</a></li>
+            
+                <li><a href="../modules/ng.html">ng</a></li>
+            
+                <li><a href="../modules/utility.html">utility</a></li>
+            
+                <li><a href="../modules/VaccineSurveySdk.html">VaccineSurveySdk</a></li>
+            
+            </ul>
+        </div>
+    </div>
+</div>
+
+            </div>
+        </div>
+        <div class="yui3-u-3-4">
+                <div id="api-options">
+        Show:
+        <label for="api-show-inherited">
+            <input type="checkbox" id="api-show-inherited" checked>
+            Inherited
+        </label>
+
+        <label for="api-show-protected">
+            <input type="checkbox" id="api-show-protected">
+            Protected
+        </label>
+
+        <label for="api-show-private">
+            <input type="checkbox" id="api-show-private">
+            Private
+        </label>
+        <label for="api-show-deprecated">
+            <input type="checkbox" id="api-show-deprecated">
+            Deprecated
+        </label>
+
+    </div>
+
+
+            <div class="apidocs">
+                <div id="docs-main">
+                    <div class="content">
+                        <h1>HttpClient Class</h1>
+<div class="box meta">
+    
+
+    
+
+    
+        <div class="foundat">
+            Defined in: <a href="../files/sdk_adapter_http_client.factory.js.html#l15"><code>sdk&#x2F;adapter&#x2F;http_client.factory.js:15</code></a>
+        </div>
+    
+
+    
+        
+            Module: <a href="../modules/adapter.html">adapter</a><br>
+            Parent Module: <a href="../modules/AP.html">AP</a>
+        
+    
+
+    
+</div>
+
+
+
+<div class="box intro">
+    <p>Constructor for HttpClient instances</p>
+
+</div>
+
+
+    <div class="constructor">
+        <h2>Constructor</h2>
+        <div id="method_HttpClient" class="method item">
+    <h3 class="name"><code>HttpClient</code></h3>
+
+    
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+            
+                <li class="arg">
+                    
+                        <code>options</code>
+                    
+                </li>
+            
+            </ul><span class="paren">)</span>
+        </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                Defined in
+                
+            
+        
+        
+        <a href="../files/sdk_adapter_http_client.factory.js.html#l15"><code>sdk&#x2F;adapter&#x2F;http_client.factory.js:15</code></a>
+        
+        </p>
+
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        
+    </div>
+
+    
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+            
+                <li class="param">
+                    
+                        <code class="param-name">options</code>
+                        <span class="type">Object</span>
+                    
+
+                    
+
+                    <div class="param-description">
+                        <p>configuration options for HttpClient constructor</p>
+
+                    </div>
+
+                    
+                </li>
+            
+            </ul>
+        </div>
+    
+
+    
+
+    
+</div>
+
+    </div>
+
+
+<div id="classdocs" class="tabview">
+    <ul class="api-class-tabs">
+        <li class="api-class-tab index"><a href="#index">Index</a></li>
+
+        
+            <li class="api-class-tab methods"><a href="#methods">Methods</a></li>
+        
+        
+            <li class="api-class-tab properties"><a href="#properties">Properties</a></li>
+        
+        
+        
+    </ul>
+
+    <div>
+        <div id="index" class="api-class-tabpanel index">
+            <h2 class="off-left">Item Index</h2>
+
+            
+                <div class="index-section methods">
+                    <h3>Methods</h3>
+
+                    <ul class="index-list methods">
+                        
+                            <li class="index-item method">
+                                <a href="#method_ajax">ajax</a>
+
+                                
+                                
+                            </li>
+                        
+                            <li class="index-item method">
+                                <a href="#method_applyCallbacks">applyCallbacks</a>
+
+                                
+                                
+                            </li>
+                        
+                            <li class="index-item method">
+                                <a href="#method_buildRequest">buildRequest</a>
+
+                                
+                                
+                            </li>
+                        
+                            <li class="index-item method">
+                                <a href="#method_create">create</a>
+
+                                
+                                
+                            </li>
+                        
+                            <li class="index-item method">
+                                <a href="#method_delete">delete</a>
+
+                                
+                                
+                            </li>
+                        
+                            <li class="index-item method">
+                                <a href="#method_get">get</a>
+
+                                
+                                
+                            </li>
+                        
+                            <li class="index-item method">
+                                <a href="#method_interceptRequest">interceptRequest</a>
+
+                                
+                                
+                            </li>
+                        
+                            <li class="index-item method">
+                                <a href="#method_patch">patch</a>
+
+                                
+                                
+                            </li>
+                        
+                            <li class="index-item method">
+                                <a href="#method_post">post</a>
+
+                                
+                                
+                            </li>
+                        
+                            <li class="index-item method">
+                                <a href="#method_put">put</a>
+
+                                
+                                
+                            </li>
+                        
+                            <li class="index-item method">
+                                <a href="#method_send">send</a>
+
+                                
+                                
+                            </li>
+                        
+                    </ul>
+                </div>
+            
+
+            
+                <div class="index-section properties">
+                    <h3>Properties</h3>
+
+                    <ul class="index-list properties">
+                        
+                            <li class="index-item property">
+                                <a href="#property_data">data</a>
+
+                                
+                                
+                            </li>
+                        
+                            <li class="index-item property">
+                                <a href="#property_headers">headers</a>
+
+                                
+                                
+                            </li>
+                        
+                            <li class="index-item property">
+                                <a href="#property_onError">onError</a>
+
+                                
+                                
+                            </li>
+                        
+                            <li class="index-item property">
+                                <a href="#property_onSuccess">onSuccess</a>
+
+                                
+                                
+                            </li>
+                        
+                            <li class="index-item property">
+                                <a href="#property_params">params</a>
+
+                                
+                                
+                            </li>
+                        
+                            <li class="index-item property">
+                                <a href="#property_requestInterceptors">requestInterceptors</a>
+
+                                
+                                
+                            </li>
+                        
+                            <li class="index-item property">
+                                <a href="#property_requestTransformations">requestTransformations</a>
+
+                                
+                                
+                            </li>
+                        
+                            <li class="index-item property">
+                                <a href="#property_responseTransformations">responseTransformations</a>
+
+                                
+                                
+                            </li>
+                        
+                            <li class="index-item property">
+                                <a href="#property_url">url</a>
+
+                                
+                                
+                            </li>
+                        
+                            <li class="index-item property">
+                                <a href="#property_useOfflineCache">useOfflineCache</a>
+
+                                
+                                
+                            </li>
+                        
+                            <li class="index-item property">
+                                <a href="#property_user">user</a>
+
+                                
+                                
+                            </li>
+                        
+                            <li class="index-item property">
+                                <a href="#property_withCredentials">withCredentials</a>
+
+                                
+                                
+                            </li>
+                        
+                    </ul>
+                </div>
+            
+
+            
+
+            
+        </div>
+
+        
+            <div id="methods" class="api-class-tabpanel">
+                <h2 class="off-left">Methods</h2>
+
+                
+                    <div id="method_ajax" class="method item">
+    <h3 class="name"><code>ajax</code></h3>
+
+    
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+            
+                <li class="arg">
+                    
+                        <code>options</code>
+                    
+                </li>
+            
+            </ul><span class="paren">)</span>
+        </div>
+    
+
+    
+        <span class="returns-inline">
+            <span class="type">Promise</span>
+        </span>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                Defined in
+                
+            
+        
+        
+        <a href="../files/sdk_adapter_http_client.factory.js.html#l297"><code>sdk&#x2F;adapter&#x2F;http_client.factory.js:297</code></a>
+        
+        </p>
+
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        <p>Sends an AJAX request. Builds the request, sends it and returns a promise.</p>
+
+    </div>
+
+    
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+            
+                <li class="param">
+                    
+                        <code class="param-name">options</code>
+                        <span class="type">Object</span>
+                    
+
+                    
+
+                    <div class="param-description">
+                        <p>configuration Object similar to what is passed to the $http service</p>
+
+                    </div>
+
+                    
+                </li>
+            
+            </ul>
+        </div>
+    
+
+    
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                
+                    
+                        <span class="type">Promise</span>:
+                    
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+                
+                    <div id="method_applyCallbacks" class="method item">
+    <h3 class="name"><code>applyCallbacks</code></h3>
+
+    
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+            
+                <li class="arg">
+                    
+                        <code>promise</code>
+                    
+                </li>
+            
+                <li class="arg">
+                    
+                        <code>successCallbacks</code>
+                    
+                </li>
+            
+                <li class="arg">
+                    
+                        <code>errorCallbacks</code>
+                    
+                </li>
+            
+            </ul><span class="paren">)</span>
+        </div>
+    
+
+    
+        <span class="returns-inline">
+            <span class="type">Promise</span>
+        </span>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                Defined in
+                
+            
+        
+        
+        <a href="../files/sdk_adapter_http_client.factory.js.html#l214"><code>sdk&#x2F;adapter&#x2F;http_client.factory.js:214</code></a>
+        
+        </p>
+
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        <p>Applies success and error callbacks to a promise returned by angular&#39;s $http service</p>
+
+    </div>
+
+    
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+            
+                <li class="param">
+                    
+                        <code class="param-name">promise</code>
+                        <span class="type">Promise</span>
+                    
+
+                    
+
+                    <div class="param-description">
+                        <p>promise Object obtained as a result of calling $http</p>
+
+                    </div>
+
+                    
+                </li>
+            
+                <li class="param">
+                    
+                        <code class="param-name">successCallbacks</code>
+                        <span class="type">Function</span>
+                    
+
+                    
+
+                    <div class="param-description">
+                        <p>Array of success callbacks to apply in order to promise</p>
+
+                    </div>
+
+                    
+                </li>
+            
+                <li class="param">
+                    
+                        <code class="param-name">errorCallbacks</code>
+                        <span class="type">Function</span>
+                    
+
+                    
+
+                    <div class="param-description">
+                        <p>Array of error callbacks to apply in order to promise</p>
+
+                    </div>
+
+                    
+                </li>
+            
+            </ul>
+        </div>
+    
+
+    
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                
+                    
+                        <span class="type">Promise</span>:
+                    
+                    <p>the same promise passed as an argument but with all callbacks subscribed</p>
+
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+                
+                    <div id="method_buildRequest" class="method item">
+    <h3 class="name"><code>buildRequest</code></h3>
+
+    
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+            
+                <li class="arg">
+                    
+                        <code>method</code>
+                    
+                </li>
+            
+                <li class="arg">
+                    
+                        <code>url</code>
+                    
+                </li>
+            
+                <li class="arg">
+                    
+                        <code>params</code>
+                    
+                </li>
+            
+                <li class="arg">
+                    
+                        <code>headers</code>
+                    
+                </li>
+            
+                <li class="arg">
+                    
+                        <code>data</code>
+                    
+                </li>
+            
+                <li class="arg">
+                    
+                        <code>success</code>
+                    
+                </li>
+            
+                <li class="arg">
+                    
+                        <code>error</code>
+                    
+                </li>
+            
+                <li class="arg">
+                    
+                        <code>withCredentials</code>
+                    
+                </li>
+            
+                <li class="arg">
+                    
+                        <code>requestTransformations</code>
+                    
+                </li>
+            
+                <li class="arg">
+                    
+                        <code>responseTransformations</code>
+                    
+                </li>
+            
+            </ul><span class="paren">)</span>
+        </div>
+    
+
+    
+        <span class="returns-inline">
+            <span class="type">Object</span>
+        </span>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                Defined in
+                
+            
+        
+        
+        <a href="../files/sdk_adapter_http_client.factory.js.html#l105"><code>sdk&#x2F;adapter&#x2F;http_client.factory.js:105</code></a>
+        
+        </p>
+
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        <p>Creates the Object that is passed to angular&#39;s $http service. This resulting Object will contain the default $http configuration,
+overriden by the HttpClient&#39;s configuration properties, and then also overriden by any additional configuration passed as arguments to
+this Function.</p>
+<p>For example:</p>
+<p>If</p>
+<pre class="code prettyprint"><code>$http.defaults.headers = { &quot;Foo&quot;: &quot;Bar&quot; }</code></pre>
+<p>And</p>
+<pre class="code prettyprint"><code>this.headers = { &quot;Foo2&quot;: &quot;Bar2&quot; }</code></pre>
+<p>And</p>
+<pre class="code prettyprint"><code>headers (Function argument) =
+{
+  &quot;Foo&quot;: &quot;NotBar&quot;,
+  &quot;Foo3&quot;: &quot;Bar3&quot;
+}</code></pre>
+<p>The resulting Object will contain</p>
+<pre class="code prettyprint"><code>{
+  headers: {
+    &quot;Foo&quot;: &quot;NotBar&quot;,
+    &quot;Foo2&quot;: &quot;Bar2&quot;,
+    &quot;Foo3&quot;: &quot;Bar3&quot;
+  }
+}</code></pre>
+<p>Also the request and response transformations will each be the union of the default transformations,
+the HttpClient&#39;s transformations and any transformations passed as arguments.
+The urls will also be concatenated using the same hierarchy.</p>
+
+    </div>
+
+    
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+            
+                <li class="param">
+                    
+                        <code class="param-name">method</code>
+                        <span class="type">String</span>
+                    
+
+                    
+
+                    <div class="param-description">
+                        <p>http verb to use</p>
+
+                    </div>
+
+                    
+                </li>
+            
+                <li class="param">
+                    
+                        <code class="param-name">url</code>
+                        <span class="type">String</span>
+                    
+
+                    
+
+                    <div class="param-description">
+                        <p>url to append to the HttpClient&#39;s url</p>
+
+                    </div>
+
+                    
+                </li>
+            
+                <li class="param">
+                    
+                        <code class="param-name">params</code>
+                        <span class="type">Object</span>
+                    
+
+                    
+
+                    <div class="param-description">
+                        <p>query string parameters to send with this request</p>
+
+                    </div>
+
+                    
+                </li>
+            
+                <li class="param">
+                    
+                        <code class="param-name">headers</code>
+                        <span class="type">Object</span>
+                    
+
+                    
+
+                    <div class="param-description">
+                        <p>headers to send with this request</p>
+
+                    </div>
+
+                    
+                </li>
+            
+                <li class="param">
+                    
+                        <code class="param-name">data</code>
+                        <span class="type">Object</span>
+                    
+
+                    
+
+                    <div class="param-description">
+                        <p>payload data to send with this request (not used for GET requests)</p>
+
+                    </div>
+
+                    
+                </li>
+            
+                <li class="param">
+                    
+                        <code class="param-name">success</code>
+                        <span class="type">Function</span>
+                    
+
+                    
+
+                    <div class="param-description">
+                        <p>success callback to execute after this request comes back from the server</p>
+
+                    </div>
+
+                    
+                </li>
+            
+                <li class="param">
+                    
+                        <code class="param-name">error</code>
+                        <span class="type">Function</span>
+                    
+
+                    
+
+                    <div class="param-description">
+                        <p>error callback to execute after this request comes back from the server</p>
+
+                    </div>
+
+                    
+                </li>
+            
+                <li class="param">
+                    
+                        <code class="param-name">withCredentials</code>
+                        <span class="type">Boolean</span>
+                    
+
+                    
+
+                    <div class="param-description">
+                        <p>whether the request should be cross-domain or not</p>
+
+                    </div>
+
+                    
+                </li>
+            
+                <li class="param">
+                    
+                        <code class="param-name">requestTransformations</code>
+                        <span class="type">Function</span>
+                    
+
+                    
+
+                    <div class="param-description">
+                        <p>array of transformations to apply to this request</p>
+
+                    </div>
+
+                    
+                </li>
+            
+                <li class="param">
+                    
+                        <code class="param-name">responseTransformations</code>
+                        <span class="type">Function</span>
+                    
+
+                    
+
+                    <div class="param-description">
+                        <p>array of transformations to apply to the response of this request</p>
+
+                    </div>
+
+                    
+                </li>
+            
+            </ul>
+        </div>
+    
+
+    
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                
+                    
+                        <span class="type">Object</span>:
+                    
+                    <p>the request to pass to angular&#39;s $http service</p>
+
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+                
+                    <div id="method_create" class="method item">
+    <h3 class="name"><code>create</code></h3>
+
+    
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+            
+                <li class="arg">
+                    
+                        <code>options</code>
+                    
+                </li>
+            
+            </ul><span class="paren">)</span>
+        </div>
+    
+
+    
+        <span class="returns-inline">
+            <span class="type"><a href="../classes/HttpClient.html" class="crosslink">HttpClient</a></span>
+        </span>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                Defined in
+                
+            
+        
+        
+        <a href="../files/sdk_adapter_http_client.factory.js.html#l380"><code>sdk&#x2F;adapter&#x2F;http_client.factory.js:380</code></a>
+        
+        </p>
+
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        <p>Creates an instance of {HttpClient} given a configuration Object</p>
+
+    </div>
+
+    
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+            
+                <li class="param">
+                    
+                        <code class="param-name">options</code>
+                        <span class="type">Object</span>
+                    
+
+                    
+
+                    <div class="param-description">
+                        <p>configuration options for creating a new HttpClient</p>
+
+                    </div>
+
+                    
+                </li>
+            
+            </ul>
+        </div>
+    
+
+    
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                
+                    
+                        <span class="type"><a href="../classes/HttpClient.html" class="crosslink">HttpClient</a></span>:
+                    
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+                
+                    <div id="method_delete" class="method item">
+    <h3 class="name"><code>delete</code></h3>
+
+    
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+            
+                <li class="arg">
+                    
+                        <code>options</code>
+                    
+                </li>
+            
+            </ul><span class="paren">)</span>
+        </div>
+    
+
+    
+        <span class="returns-inline">
+            <span class="type">Promise</span>
+        </span>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                Defined in
+                
+            
+        
+        
+        <a href="../files/sdk_adapter_http_client.factory.js.html#l368"><code>sdk&#x2F;adapter&#x2F;http_client.factory.js:368</code></a>
+        
+        </p>
+
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        <p>Execute a DELETE request</p>
+
+    </div>
+
+    
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+            
+                <li class="param">
+                    
+                        <code class="param-name">options</code>
+                        <span class="type">Object</span>
+                    
+
+                    
+
+                    <div class="param-description">
+                        <p>options to configure the request to make</p>
+
+                    </div>
+
+                    
+                </li>
+            
+            </ul>
+        </div>
+    
+
+    
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                
+                    
+                        <span class="type">Promise</span>:
+                    
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+                
+                    <div id="method_get" class="method item">
+    <h3 class="name"><code>get</code></h3>
+
+    
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+            
+                <li class="arg">
+                    
+                        <code>options</code>
+                    
+                </li>
+            
+            </ul><span class="paren">)</span>
+        </div>
+    
+
+    
+        <span class="returns-inline">
+            <span class="type">Promise</span>
+        </span>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                Defined in
+                
+            
+        
+        
+        <a href="../files/sdk_adapter_http_client.factory.js.html#l324"><code>sdk&#x2F;adapter&#x2F;http_client.factory.js:324</code></a>
+        
+        </p>
+
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        <p>Execute a GET request</p>
+
+    </div>
+
+    
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+            
+                <li class="param">
+                    
+                        <code class="param-name">options</code>
+                        <span class="type">Object</span>
+                    
+
+                    
+
+                    <div class="param-description">
+                        <p>options to configure the request to make</p>
+
+                    </div>
+
+                    
+                </li>
+            
+            </ul>
+        </div>
+    
+
+    
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                
+                    
+                        <span class="type">Promise</span>:
+                    
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+                
+                    <div id="method_interceptRequest" class="method item">
+    <h3 class="name"><code>interceptRequest</code></h3>
+
+    
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+            
+                <li class="arg">
+                    
+                        <code>the</code>
+                    
+                </li>
+            
+                <li class="arg">
+                    
+                        <code>chain</code>
+                    
+                </li>
+            
+            </ul><span class="paren">)</span>
+        </div>
+    
+
+    
+        <span class="returns-inline">
+            <span class="type">Object</span>
+        </span>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                Defined in
+                
+            
+        
+        
+        <a href="../files/sdk_adapter_http_client.factory.js.html#l281"><code>sdk&#x2F;adapter&#x2F;http_client.factory.js:281</code></a>
+        
+        </p>
+
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        <p>Runs a chain of {Function} sending them the request object as an argument so they can mutate it, where every
+function in the chain gets the result of the previous function.</p>
+
+    </div>
+
+    
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+            
+                <li class="param">
+                    
+                        <code class="param-name">the</code>
+                        <span class="type">Object</span>
+                    
+
+                    
+
+                    <div class="param-description">
+                        <p>request configuration object, which is passed to the first function in the chain</p>
+
+                    </div>
+
+                    
+                </li>
+            
+                <li class="param">
+                    
+                        <code class="param-name">chain</code>
+                        <span class="type">Array</span>
+                    
+
+                    
+
+                    <div class="param-description">
+                        <p>of {Function} objects to execute</p>
+
+                    </div>
+
+                    
+                </li>
+            
+            </ul>
+        </div>
+    
+
+    
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                
+                    
+                        <span class="type">Object</span>:
+                    
+                    <p>the result of running the entire chain</p>
+
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+                
+                    <div id="method_patch" class="method item">
+    <h3 class="name"><code>patch</code></h3>
+
+    
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+            
+                <li class="arg">
+                    
+                        <code>options</code>
+                    
+                </li>
+            
+            </ul><span class="paren">)</span>
+        </div>
+    
+
+    
+        <span class="returns-inline">
+            <span class="type">Promise</span>
+        </span>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                Defined in
+                
+            
+        
+        
+        <a href="../files/sdk_adapter_http_client.factory.js.html#l357"><code>sdk&#x2F;adapter&#x2F;http_client.factory.js:357</code></a>
+        
+        </p>
+
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        <p>Execute a PATCH request</p>
+
+    </div>
+
+    
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+            
+                <li class="param">
+                    
+                        <code class="param-name">options</code>
+                        <span class="type">Object</span>
+                    
+
+                    
+
+                    <div class="param-description">
+                        <p>options to configure the request to make</p>
+
+                    </div>
+
+                    
+                </li>
+            
+            </ul>
+        </div>
+    
+
+    
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                
+                    
+                        <span class="type">Promise</span>:
+                    
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+                
+                    <div id="method_post" class="method item">
+    <h3 class="name"><code>post</code></h3>
+
+    
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+            
+                <li class="arg">
+                    
+                        <code>options</code>
+                    
+                </li>
+            
+            </ul><span class="paren">)</span>
+        </div>
+    
+
+    
+        <span class="returns-inline">
+            <span class="type">Promise</span>
+        </span>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                Defined in
+                
+            
+        
+        
+        <a href="../files/sdk_adapter_http_client.factory.js.html#l335"><code>sdk&#x2F;adapter&#x2F;http_client.factory.js:335</code></a>
+        
+        </p>
+
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        <p>Execute a POST request</p>
+
+    </div>
+
+    
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+            
+                <li class="param">
+                    
+                        <code class="param-name">options</code>
+                        <span class="type">Object</span>
+                    
+
+                    
+
+                    <div class="param-description">
+                        <p>options to configure the request to make</p>
+
+                    </div>
+
+                    
+                </li>
+            
+            </ul>
+        </div>
+    
+
+    
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                
+                    
+                        <span class="type">Promise</span>:
+                    
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+                
+                    <div id="method_put" class="method item">
+    <h3 class="name"><code>put</code></h3>
+
+    
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+            
+                <li class="arg">
+                    
+                        <code>options</code>
+                    
+                </li>
+            
+            </ul><span class="paren">)</span>
+        </div>
+    
+
+    
+        <span class="returns-inline">
+            <span class="type">Promise</span>
+        </span>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                Defined in
+                
+            
+        
+        
+        <a href="../files/sdk_adapter_http_client.factory.js.html#l346"><code>sdk&#x2F;adapter&#x2F;http_client.factory.js:346</code></a>
+        
+        </p>
+
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        <p>Execute a PUT request</p>
+
+    </div>
+
+    
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+            
+                <li class="param">
+                    
+                        <code class="param-name">options</code>
+                        <span class="type">Object</span>
+                    
+
+                    
+
+                    <div class="param-description">
+                        <p>options to configure the request to make</p>
+
+                    </div>
+
+                    
+                </li>
+            
+            </ul>
+        </div>
+    
+
+    
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                
+                    
+                        <span class="type">Promise</span>:
+                    
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+                
+                    <div id="method_send" class="method item">
+    <h3 class="name"><code>send</code></h3>
+
+    
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+            
+                <li class="arg">
+                    
+                        <code>req</code>
+                    
+                </li>
+            
+            </ul><span class="paren">)</span>
+        </div>
+    
+
+    
+        <span class="returns-inline">
+            <span class="type">Promise</span>
+        </span>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                Defined in
+                
+            
+        
+        
+        <a href="../files/sdk_adapter_http_client.factory.js.html#l244"><code>sdk&#x2F;adapter&#x2F;http_client.factory.js:244</code></a>
+        
+        </p>
+
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        <p>Execute the HTTP request by calling angular&#39;s $http service. If offline caching is enabled it will &quot;fake&quot; a response from the
+$http service and return the data from the cache (if there is data available for that request). If the data hasn&#39;t been cached
+then it will make the request to the server and cache the response for later</p>
+
+    </div>
+
+    
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+            
+                <li class="param">
+                    
+                        <code class="param-name">req</code>
+                        <span class="type">Object</span>
+                    
+
+                    
+
+                    <div class="param-description">
+                        <p>Object representing the configuration of the request to make</p>
+
+                    </div>
+
+                    
+                </li>
+            
+            </ul>
+        </div>
+    
+
+    
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                
+                    
+                        <span class="type">Promise</span>:
+                    
+                    <p>returns the same promise returned by $http but with all success and error callbacks subscribed to it</p>
+
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+                
+            </div>
+        
+
+        
+            <div id="properties" class="api-class-tabpanel">
+                <h2 class="off-left">Properties</h2>
+
+                
+                    <div id="property_data" class="property item">
+    <h3 class="name"><code>data</code></h3>
+    <span class="type">Object key-value pairs for data to send inside the request body (not applicable when executing GET requests)</span>
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                Defined in
+                
+            
+        
+        
+        <a href="../files/sdk_adapter_http_client.factory.js.html#l58"><code>sdk&#x2F;adapter&#x2F;http_client.factory.js:58</code></a>
+        
+        </p>
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        
+    </div>
+
+    
+
+    
+
+    
+</div>
+
+                
+                    <div id="property_headers" class="property item">
+    <h3 class="name"><code>headers</code></h3>
+    <span class="type">Object key-value pairs where "key" is the header name and "value" is the header value</span>
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                Defined in
+                
+            
+        
+        
+        <a href="../files/sdk_adapter_http_client.factory.js.html#l48"><code>sdk&#x2F;adapter&#x2F;http_client.factory.js:48</code></a>
+        
+        </p>
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        
+    </div>
+
+    
+
+    
+
+    
+</div>
+
+                
+                    <div id="property_onError" class="property item">
+    <h3 class="name"><code>onError</code></h3>
+    <span class="type">Function callback function to apply when there is an error after sending a request to the server</span>
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                Defined in
+                
+            
+        
+        
+        <a href="../files/sdk_adapter_http_client.factory.js.html#l68"><code>sdk&#x2F;adapter&#x2F;http_client.factory.js:68</code></a>
+        
+        </p>
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        
+    </div>
+
+    
+
+    
+
+    
+</div>
+
+                
+                    <div id="property_onSuccess" class="property item">
+    <h3 class="name"><code>onSuccess</code></h3>
+    <span class="type">Function callback to apply when a request returns successfully from the server</span>
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                Defined in
+                
+            
+        
+        
+        <a href="../files/sdk_adapter_http_client.factory.js.html#l63"><code>sdk&#x2F;adapter&#x2F;http_client.factory.js:63</code></a>
+        
+        </p>
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        
+    </div>
+
+    
+
+    
+
+    
+</div>
+
+                
+                    <div id="property_params" class="property item">
+    <h3 class="name"><code>params</code></h3>
+    <span class="type">Object key-value pairs for query string parameters</span>
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                Defined in
+                
+            
+        
+        
+        <a href="../files/sdk_adapter_http_client.factory.js.html#l53"><code>sdk&#x2F;adapter&#x2F;http_client.factory.js:53</code></a>
+        
+        </p>
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        
+    </div>
+
+    
+
+    
+
+    
+</div>
+
+                
+                    <div id="property_requestInterceptors" class="property item">
+    <h3 class="name"><code>requestInterceptors</code></h3>
+    <span class="type">Array</span>
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                Defined in
+                
+            
+        
+        
+        <a href="../files/sdk_adapter_http_client.factory.js.html#l97"><code>sdk&#x2F;adapter&#x2F;http_client.factory.js:97</code></a>
+        
+        </p>
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        <p>Request interceptor chain to modify a request object before sending it to the server</p>
+
+    </div>
+
+    
+
+    
+
+    
+</div>
+
+                
+                    <div id="property_requestTransformations" class="property item">
+    <h3 class="name"><code>requestTransformations</code></h3>
+    <span class="type">Function array of transformations to apply to the request data before sending it to the server</span>
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                Defined in
+                
+            
+        
+        
+        <a href="../files/sdk_adapter_http_client.factory.js.html#l78"><code>sdk&#x2F;adapter&#x2F;http_client.factory.js:78</code></a>
+        
+        </p>
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        <p>Request transformations are executed after the request is built and before it is sent to the server
+This array contains Function objects which execute in order and the return value of each function is passed
+to the next one in the Array. The first transformation recieves the request data. If a Function returns a value then this
+value is passed to the next in the chain, if no value is returned then the object being passed along the chain passed to the next
+Function as it was recieved by the former. Query string params can&#39;t be altered by this transformations, only payload data.</p>
+
+    </div>
+
+    
+
+    
+
+    
+</div>
+
+                
+                    <div id="property_responseTransformations" class="property item">
+    <h3 class="name"><code>responseTransformations</code></h3>
+    <span class="type">Function array of transformations to apply to the response data after it comes back from the server and before the success or error callbacks are executed</span>
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                Defined in
+                
+            
+        
+        
+        <a href="../files/sdk_adapter_http_client.factory.js.html#l88"><code>sdk&#x2F;adapter&#x2F;http_client.factory.js:88</code></a>
+        
+        </p>
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        <p>Response transformations are executed after the response comes back from the server and before the success or error
+callbacks are executed. This array contains Functions that execute in order and the return value of each one of these is passed
+on to the next in the chain. The first Function on the array recieves the response from the server. If a Function returns
+no value then the object being passed is not altered, and it is passed to the next Function as an argument.</p>
+
+    </div>
+
+    
+
+    
+
+    
+</div>
+
+                
+                    <div id="property_url" class="property item">
+    <h3 class="name"><code>url</code></h3>
+    <span class="type">String url route</span>
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                Defined in
+                
+            
+        
+        
+        <a href="../files/sdk_adapter_http_client.factory.js.html#l43"><code>sdk&#x2F;adapter&#x2F;http_client.factory.js:43</code></a>
+        
+        </p>
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        
+    </div>
+
+    
+
+    
+
+    
+</div>
+
+                
+                    <div id="property_useOfflineCache" class="property item">
+    <h3 class="name"><code>useOfflineCache</code></h3>
+    <span class="type">Boolean</span>
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                Defined in
+                
+            
+        
+        
+        <a href="../files/sdk_adapter_http_client.factory.js.html#l33"><code>sdk&#x2F;adapter&#x2F;http_client.factory.js:33</code></a>
+        
+        </p>
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        
+    </div>
+
+    
+
+    
+
+    
+</div>
+
+                
+                    <div id="property_user" class="property item">
+    <h3 class="name"><code>user</code></h3>
+    <span class="type">String the username of the currently logged in user (if there is a user logged in)</span>
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                Defined in
+                
+            
+        
+        
+        <a href="../files/sdk_adapter_http_client.factory.js.html#l38"><code>sdk&#x2F;adapter&#x2F;http_client.factory.js:38</code></a>
+        
+        </p>
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        
+    </div>
+
+    
+
+    
+
+    
+</div>
+
+                
+                    <div id="property_withCredentials" class="property item">
+    <h3 class="name"><code>withCredentials</code></h3>
+    <span class="type">Boolean specifies whether the request to send is a cross-domain kind of request</span>
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                Defined in
+                
+            
+        
+        
+        <a href="../files/sdk_adapter_http_client.factory.js.html#l73"><code>sdk&#x2F;adapter&#x2F;http_client.factory.js:73</code></a>
+        
+        </p>
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        
+    </div>
+
+    
+
+    
+
+    
+</div>
+
+                
+            </div>
+        
+
+        
+
+        
+    </div>
+</div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../assets/vendor/prettify/prettify-min.js"></script>
+<script>prettyPrint();</script>
+<script src="../assets/js/yui-prettify.js"></script>
+<script src="../assets/../api.js"></script>
+<script src="../assets/js/api-filter.js"></script>
+<script src="../assets/js/api-list.js"></script>
+<script src="../assets/js/api-search.js"></script>
+<script src="../assets/js/apidocs.js"></script>
+</body>
+</html>

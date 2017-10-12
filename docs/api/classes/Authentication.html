@@ -1,0 +1,1648 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Authentication - VaccineSurvey</title>
+    <link rel="stylesheet" href="http://yui.yahooapis.com/3.9.1/build/cssgrids/cssgrids-min.css">
+    <link rel="stylesheet" href="../assets/vendor/prettify/prettify-min.css">
+    <link rel="stylesheet" href="../assets/css/main.css" id="site_styles">
+    <link rel="shortcut icon" type="image/png" href="../assets/favicon.png">
+    <script src="http://yui.yahooapis.com/combo?3.9.1/build/yui/yui-min.js"></script>
+</head>
+<body class="yui3-skin-sam">
+
+<div id="doc">
+    <div id="hd" class="yui3-g header">
+        <div class="yui3-u-3-4">
+            
+                <h1><img src="../assets/css/logo.png" title="VaccineSurvey"></h1>
+            
+        </div>
+        <div class="yui3-u-1-4 version">
+            <em>API Docs for: 0.0.1</em>
+        </div>
+    </div>
+    <div id="bd" class="yui3-g">
+
+        <div class="yui3-u-1-4">
+            <div id="docs-sidebar" class="sidebar apidocs">
+                <div id="api-list">
+    <h2 class="off-left">APIs</h2>
+    <div id="api-tabview" class="tabview">
+        <ul class="tabs">
+            <li><a href="#api-classes">Classes</a></li>
+            <li><a href="#api-modules">Modules</a></li>
+        </ul>
+
+        <div id="api-tabview-filter">
+            <input type="search" id="api-filter" placeholder="Type to filter APIs">
+        </div>
+
+        <div id="api-tabview-panel">
+            <ul id="api-classes" class="apis classes">
+            
+                <li><a href="../classes/$adapterFactory.html">$adapterFactory</a></li>
+            
+                <li><a href="../classes/$authenticationFactory.html">$authenticationFactory</a></li>
+            
+                <li><a href="../classes/$authenticationManagerFactory.html">$authenticationManagerFactory</a></li>
+            
+                <li><a href="../classes/$authenticationStorageService.html">$authenticationStorageService</a></li>
+            
+                <li><a href="../classes/$clinicianBlockRandomizer.html">$clinicianBlockRandomizer</a></li>
+            
+                <li><a href="../classes/$clinicianCode.html">$clinicianCode</a></li>
+            
+                <li><a href="../classes/$dispatcherFactory.html">$dispatcherFactory</a></li>
+            
+                <li><a href="../classes/$education.html">$education</a></li>
+            
+                <li><a href="../classes/$healthcareProviderContent.html">$healthcareProviderContent</a></li>
+            
+                <li><a href="../classes/$helpers.html">$helpers</a></li>
+            
+                <li><a href="../classes/$httpAdapterFactory.html">$httpAdapterFactory</a></li>
+            
+                <li><a href="../classes/$httpClientFactory.html">$httpClientFactory</a></li>
+            
+                <li><a href="../classes/$jobAuditLogging.html">$jobAuditLogging</a></li>
+            
+                <li><a href="../classes/$mockServerFactory.html">$mockServerFactory</a></li>
+            
+                <li><a href="../classes/$modelFactory.html">$modelFactory</a></li>
+            
+                <li><a href="../classes/$questionCategory.html">$questionCategory</a></li>
+            
+                <li><a href="../classes/$questionCode.html">$questionCode</a></li>
+            
+                <li><a href="../classes/$questionType.html">$questionType</a></li>
+            
+                <li><a href="../classes/$race.html">$race</a></li>
+            
+                <li><a href="../classes/$searchAuditLogging.html">$searchAuditLogging</a></li>
+            
+                <li><a href="../classes/$sendGrid.html">$sendGrid</a></li>
+            
+                <li><a href="../classes/$setting.html">$setting</a></li>
+            
+                <li><a href="../classes/$survey.html">$survey</a></li>
+            
+                <li><a href="../classes/$surveyAnswer.html">$surveyAnswer</a></li>
+            
+                <li><a href="../classes/$surveyQuestion.html">$surveyQuestion</a></li>
+            
+                <li><a href="../classes/$surveyQuestionSkipLogic.html">$surveyQuestionSkipLogic</a></li>
+            
+                <li><a href="../classes/$topic.html">$topic</a></li>
+            
+                <li><a href="../classes/$twilio.html">$twilio</a></li>
+            
+                <li><a href="../classes/$user.html">$user</a></li>
+            
+                <li><a href="../classes/$userAuditLogging.html">$userAuditLogging</a></li>
+            
+                <li><a href="../classes/$userSurvey.html">$userSurvey</a></li>
+            
+                <li><a href="../classes/$userSurveyAnswer.html">$userSurveyAnswer</a></li>
+            
+                <li><a href="../classes/$userSurveyVideo.html">$userSurveyVideo</a></li>
+            
+                <li><a href="../classes/$vaccinationReminder.html">$vaccinationReminder</a></li>
+            
+                <li><a href="../classes/$vaccineSurveySdkDefaultAdapter.html">$vaccineSurveySdkDefaultAdapter</a></li>
+            
+                <li><a href="../classes/$vaccineSurveySdkDispatcher.html">$vaccineSurveySdkDispatcher</a></li>
+            
+                <li><a href="../classes/$video.html">$video</a></li>
+            
+                <li><a href="../classes/$videoAuditLogging.html">$videoAuditLogging</a></li>
+            
+                <li><a href="../classes/Adapter.html">Adapter</a></li>
+            
+                <li><a href="../classes/Authentication.html">Authentication</a></li>
+            
+                <li><a href="../classes/AuthenticationManager.html">AuthenticationManager</a></li>
+            
+                <li><a href="../classes/Dispatcher.html">Dispatcher</a></li>
+            
+                <li><a href="../classes/HttpClient.html">HttpClient</a></li>
+            
+                <li><a href="../classes/MockServer.html">MockServer</a></li>
+            
+                <li><a href="../classes/Model.html">Model</a></li>
+            
+                <li><a href="../classes/ModelRegistry.html">ModelRegistry</a></li>
+            
+                <li><a href="../classes/Resource.html">Resource</a></li>
+            
+                <li><a href="../classes/{Cache}.html">{Cache}</a></li>
+            
+            </ul>
+
+            <ul id="api-modules" class="apis modules">
+            
+                <li><a href="../modules/adapter.html">adapter</a></li>
+            
+                <li><a href="../modules/adapters.html">adapters</a></li>
+            
+                <li><a href="../modules/AP.html">AP</a></li>
+            
+                <li><a href="../modules/authentication.html">authentication</a></li>
+            
+                <li><a href="../modules/config.html">config</a></li>
+            
+                <li><a href="../modules/model.html">model</a></li>
+            
+                <li><a href="../modules/models.html">models</a></li>
+            
+                <li><a href="../modules/ng.html">ng</a></li>
+            
+                <li><a href="../modules/utility.html">utility</a></li>
+            
+                <li><a href="../modules/VaccineSurveySdk.html">VaccineSurveySdk</a></li>
+            
+            </ul>
+        </div>
+    </div>
+</div>
+
+            </div>
+        </div>
+        <div class="yui3-u-3-4">
+                <div id="api-options">
+        Show:
+        <label for="api-show-inherited">
+            <input type="checkbox" id="api-show-inherited" checked>
+            Inherited
+        </label>
+
+        <label for="api-show-protected">
+            <input type="checkbox" id="api-show-protected">
+            Protected
+        </label>
+
+        <label for="api-show-private">
+            <input type="checkbox" id="api-show-private">
+            Private
+        </label>
+        <label for="api-show-deprecated">
+            <input type="checkbox" id="api-show-deprecated">
+            Deprecated
+        </label>
+
+    </div>
+
+
+            <div class="apidocs">
+                <div id="docs-main">
+                    <div class="content">
+                        <h1>Authentication Class</h1>
+<div class="box meta">
+    
+
+    
+
+    
+        <div class="foundat">
+            Defined in: <a href="../files/sdk_auth_authentication.factory.js.html#l33"><code>sdk&#x2F;auth&#x2F;authentication.factory.js:33</code></a>
+        </div>
+    
+
+    
+        
+            Module: <a href="../modules/authentication.html">authentication</a><br>
+            Parent Module: <a href="../modules/AP.html">AP</a>
+        
+    
+
+    
+</div>
+
+
+
+<div class="box intro">
+    <p>Authentication Constructor</p>
+
+</div>
+
+
+    <div class="constructor">
+        <h2>Constructor</h2>
+        <div id="method_Authentication" class="method item">
+    <h3 class="name"><code>Authentication</code></h3>
+
+    
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+            
+                <li class="arg">
+                    
+                        <code>authentication</code>
+                    
+                </li>
+            
+            </ul><span class="paren">)</span>
+        </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                Defined in
+                
+            
+        
+        
+        <a href="../files/sdk_auth_authentication.factory.js.html#l33"><code>sdk&#x2F;auth&#x2F;authentication.factory.js:33</code></a>
+        
+        </p>
+
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        
+    </div>
+
+    
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+            
+                <li class="param">
+                    
+                        <code class="param-name">authentication</code>
+                        <span class="type"><a href="../classes/AuthenticationManager.html" class="crosslink">AuthenticationManager</a></span>
+                    
+
+                    
+
+                    <div class="param-description">
+                        <p>strategies coordinator and manager</p>
+
+                    </div>
+
+                    
+                </li>
+            
+            </ul>
+        </div>
+    
+
+    
+
+    
+</div>
+
+    </div>
+
+
+<div id="classdocs" class="tabview">
+    <ul class="api-class-tabs">
+        <li class="api-class-tab index"><a href="#index">Index</a></li>
+
+        
+            <li class="api-class-tab methods"><a href="#methods">Methods</a></li>
+        
+        
+            <li class="api-class-tab properties"><a href="#properties">Properties</a></li>
+        
+        
+        
+            <li class="api-class-tab events"><a href="#events">Events</a></li>
+        
+    </ul>
+
+    <div>
+        <div id="index" class="api-class-tabpanel index">
+            <h2 class="off-left">Item Index</h2>
+
+            
+                <div class="index-section methods">
+                    <h3>Methods</h3>
+
+                    <ul class="index-list methods">
+                        
+                            <li class="index-item method">
+                                <a href="#method_authenticate">authenticate</a>
+
+                                
+                                    <span class="flag static">static</span>
+                                
+                                
+                            </li>
+                        
+                            <li class="index-item method">
+                                <a href="#method_client">client</a>
+
+                                
+                                
+                            </li>
+                        
+                            <li class="index-item method">
+                                <a href="#method_deauthenticate">deauthenticate</a>
+
+                                
+                                    <span class="flag static">static</span>
+                                
+                                
+                            </li>
+                        
+                            <li class="index-item method">
+                                <a href="#method_getUsername">getUsername</a>
+
+                                
+                                    <span class="flag static">static</span>
+                                
+                                
+                            </li>
+                        
+                            <li class="index-item method">
+                                <a href="#method_getUserRole">getUserRole</a>
+
+                                
+                                    <span class="flag static">static</span>
+                                
+                                
+                            </li>
+                        
+                            <li class="index-item method">
+                                <a href="#method_isAuthenticated">isAuthenticated</a>
+
+                                
+                                    <span class="flag static">static</span>
+                                
+                                
+                            </li>
+                        
+                            <li class="index-item method">
+                                <a href="#method_login">login</a>
+
+                                
+                                    <span class="flag static">static</span>
+                                
+                                
+                            </li>
+                        
+                            <li class="index-item method">
+                                <a href="#method_logout">logout</a>
+
+                                
+                                    <span class="flag static">static</span>
+                                
+                                
+                            </li>
+                        
+                    </ul>
+                </div>
+            
+
+            
+                <div class="index-section properties">
+                    <h3>Properties</h3>
+
+                    <ul class="index-list properties">
+                        
+                            <li class="index-item property">
+                                <a href="#property_settings">settings</a>
+
+                                
+                                
+                            </li>
+                        
+                            <li class="index-item property">
+                                <a href="#property_settings.authentication_url">settings.authentication_url</a>
+
+                                
+                                
+                            </li>
+                        
+                            <li class="index-item property">
+                                <a href="#property_settings.deauthentication_url">settings.deauthentication_url</a>
+
+                                
+                                
+                            </li>
+                        
+                            <li class="index-item property">
+                                <a href="#property_settings.lookupField">settings.lookupField</a>
+
+                                
+                                
+                            </li>
+                        
+                            <li class="index-item property">
+                                <a href="#property_settings.matchField">settings.matchField</a>
+
+                                
+                                
+                            </li>
+                        
+                            <li class="index-item property">
+                                <a href="#property_settings.roleField">settings.roleField</a>
+
+                                
+                                
+                            </li>
+                        
+                            <li class="index-item property">
+                                <a href="#property_settings.strategyName">settings.strategyName</a>
+
+                                
+                                
+                            </li>
+                        
+                            <li class="index-item property">
+                                <a href="#property_settings.strategyType">settings.strategyType</a>
+
+                                
+                                
+                            </li>
+                        
+                    </ul>
+                </div>
+            
+
+            
+
+            
+                <div class="index-section events">
+                    <h3>Events</h3>
+
+                    <ul class="index-list events">
+                        
+                            <li class="index-item event">
+                                <a href="#event_&#x27;auth:error&#x27;
+An auth error event is emitted if a login or logout fails for
+any reason.">&#x27;auth:error&#x27;
+An auth error event is emitted if a login or logout fails for
+any reason.</a>
+
+                                
+                                
+                            </li>
+                        
+                            <li class="index-item event">
+                                <a href="#event_&#x27;auth:error&#x27;
+An auth error event is emitted if a login or logout fails for
+any reason.">&#x27;auth:error&#x27;
+An auth error event is emitted if a login or logout fails for
+any reason.</a>
+
+                                
+                                
+                            </li>
+                        
+                    </ul>
+                </div>
+            
+        </div>
+
+        
+            <div id="methods" class="api-class-tabpanel">
+                <h2 class="off-left">Methods</h2>
+
+                
+                    <div id="method_authenticate" class="method item">
+    <h3 class="name"><code>authenticate</code></h3>
+
+    
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+            
+                <li class="arg">
+                    
+                        <code>credentials</code>
+                    
+                </li>
+            
+            </ul><span class="paren">)</span>
+        </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <span class="flag static">static</span>
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                Defined in
+                
+            
+        
+        
+        <a href="../files/sdk_auth_authentication.factory.js.html#l153"><code>sdk&#x2F;auth&#x2F;authentication.factory.js:153</code></a>
+        
+        </p>
+
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        <p>Performs authentication request with HTTP basic auth.  Upon a successful
+login the user object returned by the API is stored for later use.</p>
+
+    </div>
+
+    
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+            
+                <li class="param">
+                    
+                        <code class="param-name">credentials</code>
+                        <span class="type">Object</span>
+                    
+
+                    
+
+                    <div class="param-description">
+                        <p>user credentials object, for example:
+<code>{&quot;username&quot;: &quot;johndoe&quot;, &quot;password&quot;: &quot;doe123&quot;}</code>.</p>
+
+                    </div>
+
+                    
+                </li>
+            
+            </ul>
+        </div>
+    
+
+    
+
+    
+</div>
+
+                
+                    <div id="method_client" class="method item">
+    <h3 class="name"><code>client</code></h3>
+
+    
+        <span class="paren">()</span>
+    
+
+    
+        <span class="returns-inline">
+            <span class="type"><a href="../classes/Adapter.html" class="crosslink">Adapter</a></span>
+        </span>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                Defined in
+                
+            
+        
+        
+        <a href="../files/sdk_auth_authentication.factory.js.html#l105"><code>sdk&#x2F;auth&#x2F;authentication.factory.js:105</code></a>
+        
+        </p>
+
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        <p>Gets the Adapter for the API to which this Auth Object belongs to
+NOTE: For now all Auth Objects belong to an AP backend</p>
+
+    </div>
+
+    
+
+    
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                
+                    
+                        <span class="type"><a href="../classes/Adapter.html" class="crosslink">Adapter</a></span>:
+                    
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+                
+                    <div id="method_deauthenticate" class="method item">
+    <h3 class="name"><code>deauthenticate</code></h3>
+
+    
+        <span class="paren">()</span>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <span class="flag static">static</span>
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                Defined in
+                
+            
+        
+        
+        <a href="../files/sdk_auth_authentication.factory.js.html#l188"><code>sdk&#x2F;auth&#x2F;authentication.factory.js:188</code></a>
+        
+        </p>
+
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        <p>Performs deauthentication request.  Upon a successful logout, stored user data
+is removed.</p>
+
+    </div>
+
+    
+
+    
+
+    
+</div>
+
+                
+                    <div id="method_getUsername" class="method item">
+    <h3 class="name"><code>getUsername</code></h3>
+
+    
+        <span class="paren">()</span>
+    
+
+    
+        <span class="returns-inline">
+            <span class="type">Object/null</span>
+        </span>
+    
+
+    
+
+    
+
+    
+
+    
+        <span class="flag static">static</span>
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                Defined in
+                
+            
+        
+        
+        <a href="../files/sdk_auth_authentication.factory.js.html#l202"><code>sdk&#x2F;auth&#x2F;authentication.factory.js:202</code></a>
+        
+        </p>
+
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        <p>Returns the lookup field value (username) of the currently logged-in user.</p>
+
+    </div>
+
+    
+
+    
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                
+                    
+                        <span class="type">Object/null</span>:
+                    
+                    <p>the authenticated user&#39;s lookup field value (username)</p>
+
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+                
+                    <div id="method_getUserRole" class="method item">
+    <h3 class="name"><code>getUserRole</code></h3>
+
+    
+        <span class="paren">()</span>
+    
+
+    
+        <span class="returns-inline">
+            <span class="type">Object/null</span>
+        </span>
+    
+
+    
+
+    
+
+    
+
+    
+        <span class="flag static">static</span>
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                Defined in
+                
+            
+        
+        
+        <a href="../files/sdk_auth_authentication.factory.js.html#l213"><code>sdk&#x2F;auth&#x2F;authentication.factory.js:213</code></a>
+        
+        </p>
+
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        <p>Returns the role(s) of the currently logged-in user.</p>
+
+    </div>
+
+    
+
+    
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                
+                    
+                        <span class="type">Object/null</span>:
+                    
+                    <p>the authenticated user&#39;s role(s)</p>
+
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+                
+                    <div id="method_isAuthenticated" class="method item">
+    <h3 class="name"><code>isAuthenticated</code></h3>
+
+    
+        <span class="paren">()</span>
+    
+
+    
+        <span class="returns-inline">
+            <span class="type">Boolean</span>
+        </span>
+    
+
+    
+
+    
+
+    
+
+    
+        <span class="flag static">static</span>
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                Defined in
+                
+            
+        
+        
+        <a href="../files/sdk_auth_authentication.factory.js.html#l144"><code>sdk&#x2F;auth&#x2F;authentication.factory.js:144</code></a>
+        
+        </p>
+
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        
+    </div>
+
+    
+
+    
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                
+                    
+                        <span class="type">Boolean</span>:
+                    
+                    <p><code>true</code> if a user is logged-in</p>
+
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+                
+                    <div id="method_login" class="method item">
+    <h3 class="name"><code>login</code></h3>
+
+    
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+            
+                <li class="arg">
+                    
+                        <code>credentials</code>
+                    
+                </li>
+            
+            </ul><span class="paren">)</span>
+        </div>
+    
+
+    
+        <span class="returns-inline">
+            <span class="type">Promise</span>
+        </span>
+    
+
+    
+
+    
+
+    
+
+    
+        <span class="flag static">static</span>
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                Defined in
+                
+            
+        
+        
+        <a href="../files/sdk_auth_authentication.factory.js.html#l115"><code>sdk&#x2F;auth&#x2F;authentication.factory.js:115</code></a>
+        
+        </p>
+
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        <p>Executes login request with passed <code>credentials</code>.</p>
+
+    </div>
+
+    
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+            
+                <li class="param">
+                    
+                        <code class="param-name">credentials</code>
+                        <span class="type">Object</span>
+                    
+
+                    
+
+                    <div class="param-description">
+                        <p>the credentials for the user attempting to login</p>
+
+                    </div>
+
+                    
+                </li>
+            
+            </ul>
+        </div>
+    
+
+    
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                
+                    
+                        <span class="type">Promise</span>:
+                    
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+                
+                    <div id="method_logout" class="method item">
+    <h3 class="name"><code>logout</code></h3>
+
+    
+        <span class="paren">()</span>
+    
+
+    
+        <span class="returns-inline">
+            <span class="type">Promise</span>
+        </span>
+    
+
+    
+
+    
+
+    
+
+    
+        <span class="flag static">static</span>
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                Defined in
+                
+            
+        
+        
+        <a href="../files/sdk_auth_authentication.factory.js.html#l130"><code>sdk&#x2F;auth&#x2F;authentication.factory.js:130</code></a>
+        
+        </p>
+
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        <p>Executes logout request.</p>
+
+    </div>
+
+    
+
+    
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                
+                    
+                        <span class="type">Promise</span>:
+                    
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+                
+            </div>
+        
+
+        
+            <div id="properties" class="api-class-tabpanel">
+                <h2 class="off-left">Properties</h2>
+
+                
+                    <div id="property_settings" class="property item">
+    <h3 class="name"><code>settings</code></h3>
+    <span class="type">Object</span>
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                Defined in
+                
+            
+        
+        
+        <a href="../files/sdk_auth_authentication.factory.js.html#l44"><code>sdk&#x2F;auth&#x2F;authentication.factory.js:44</code></a>
+        
+        </p>
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        <p>Stores details about authentication and authorization.</p>
+
+    </div>
+
+    
+
+    
+
+    
+</div>
+
+                
+                    <div id="property_settings.authentication_url" class="property item">
+    <h3 class="name"><code>settings.authentication_url</code></h3>
+    <span class="type">String</span>
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                Defined in
+                
+            
+        
+        
+        <a href="../files/sdk_auth_authentication.factory.js.html#l88"><code>sdk&#x2F;auth&#x2F;authentication.factory.js:88</code></a>
+        
+        </p>
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        <p>The URL of the API endpoint to authenticate</p>
+
+    </div>
+
+    
+
+    
+
+    
+</div>
+
+                
+                    <div id="property_settings.deauthentication_url" class="property item">
+    <h3 class="name"><code>settings.deauthentication_url</code></h3>
+    <span class="type">String</span>
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                Defined in
+                
+            
+        
+        
+        <a href="../files/sdk_auth_authentication.factory.js.html#l95"><code>sdk&#x2F;auth&#x2F;authentication.factory.js:95</code></a>
+        
+        </p>
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        <p>URL of logout API endpoint.  Logout requests must be made to this URL.</p>
+
+    </div>
+
+    
+
+    
+
+    
+</div>
+
+                
+                    <div id="property_settings.lookupField" class="property item">
+    <h3 class="name"><code>settings.lookupField</code></h3>
+    <span class="type">String</span>
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                Defined in
+                
+            
+        
+        
+        <a href="../files/sdk_auth_authentication.factory.js.html#l73"><code>sdk&#x2F;auth&#x2F;authentication.factory.js:73</code></a>
+        
+        </p>
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        <p>The name of the field used to find a user.  For example:  <code>username</code>.</p>
+
+    </div>
+
+    
+
+    
+
+    
+</div>
+
+                
+                    <div id="property_settings.matchField" class="property item">
+    <h3 class="name"><code>settings.matchField</code></h3>
+    <span class="type">String</span>
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                Defined in
+                
+            
+        
+        
+        <a href="../files/sdk_auth_authentication.factory.js.html#l65"><code>sdk&#x2F;auth&#x2F;authentication.factory.js:65</code></a>
+        
+        </p>
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        <p>The name of the field to match for authentication.  Only one value is used
+at this time:  <code>password</code>.</p>
+
+    </div>
+
+    
+
+    
+
+    
+</div>
+
+                
+                    <div id="property_settings.roleField" class="property item">
+    <h3 class="name"><code>settings.roleField</code></h3>
+    <span class="type">String</span>
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                Defined in
+                
+            
+        
+        
+        <a href="../files/sdk_auth_authentication.factory.js.html#l80"><code>sdk&#x2F;auth&#x2F;authentication.factory.js:80</code></a>
+        
+        </p>
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        <p>The name of the field on the object returned after authenticating that
+stores user roles.  The role field is used by <code>AP.auth.Authorization</code>.</p>
+
+    </div>
+
+    
+
+    
+
+    
+</div>
+
+                
+                    <div id="property_settings.strategyName" class="property item">
+    <h3 class="name"><code>settings.strategyName</code></h3>
+    <span class="type">String</span>
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                Defined in
+                
+            
+        
+        
+        <a href="../files/sdk_auth_authentication.factory.js.html#l58"><code>sdk&#x2F;auth&#x2F;authentication.factory.js:58</code></a>
+        
+        </p>
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        <p>The name of the authentication strategy</p>
+
+    </div>
+
+    
+
+    
+
+    
+</div>
+
+                
+                    <div id="property_settings.strategyType" class="property item">
+    <h3 class="name"><code>settings.strategyType</code></h3>
+    <span class="type">String</span>
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                Defined in
+                
+            
+        
+        
+        <a href="../files/sdk_auth_authentication.factory.js.html#l51"><code>sdk&#x2F;auth&#x2F;authentication.factory.js:51</code></a>
+        
+        </p>
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        <p>The type of the authentication strategy</p>
+
+    </div>
+
+    
+
+    
+
+    
+</div>
+
+                
+            </div>
+        
+
+        
+
+        
+            <div id="events" class="api-class-tabpanel">
+                <h2 class="off-left">Events</h2>
+
+                
+                    <div id="event_&#x27;auth:error&#x27;
+An auth error event is emitted if a login or logout fails for
+any reason." class="events item">
+    <h3 class="name"><code>&#x27;auth:error&#x27;
+An auth error event is emitted if a login or logout fails for
+any reason.</code></h3>
+    <span class="type"></span>
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                Defined in
+                
+            
+        
+        
+        <a href="../files/sdk_auth_authentication.factory.js.html#l169"><code>sdk&#x2F;auth&#x2F;authentication.factory.js:169</code></a>
+        
+        </p>
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        
+    </div>
+
+    
+
+
+    
+</div>
+
+                
+                    <div id="event_&#x27;auth:error&#x27;
+An auth error event is emitted if a login or logout fails for
+any reason." class="events item">
+    <h3 class="name"><code>&#x27;auth:error&#x27;
+An auth error event is emitted if a login or logout fails for
+any reason.</code></h3>
+    <span class="type"></span>
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                Defined in
+                
+            
+        
+        
+        <a href="../files/sdk_auth_authentication.factory.js.html#l178"><code>sdk&#x2F;auth&#x2F;authentication.factory.js:178</code></a>
+        
+        </p>
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        
+    </div>
+
+    
+
+
+    
+</div>
+
+                
+            </div>
+        
+    </div>
+</div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../assets/vendor/prettify/prettify-min.js"></script>
+<script>prettyPrint();</script>
+<script src="../assets/js/yui-prettify.js"></script>
+<script src="../assets/../api.js"></script>
+<script src="../assets/js/api-filter.js"></script>
+<script src="../assets/js/api-list.js"></script>
+<script src="../assets/js/api-search.js"></script>
+<script src="../assets/js/apidocs.js"></script>
+</body>
+</html>

@@ -1,0 +1,247 @@
+(function(module, inject, angular) {
+
+  var expect = chai.expect;
+
+  describe("Model Service - $healthcareProviderContent", function() {
+    var model, config;
+
+    beforeEach(module("VaccineSurveySdk.config"));
+    beforeEach(module("VaccineSurveySdk.models"));
+
+    beforeEach(inject(function($injector) {
+      config = $injector.get("$vaccineSurveySdkConfig");
+      model = $injector.get("$healthcareProviderContent");
+
+      config.mockServer.enable();
+    }));
+
+    it("should exist", function() {
+      expect(model).to.exist;
+    });
+
+    it("should be able to create an instance", function() {
+      var instance = model.create({
+        
+        
+        category_group: undefined,
+          
+        
+        desc: undefined,
+          
+        
+        external_link: undefined,
+          
+        
+        keywords: undefined,
+          
+        
+        title: undefined,
+          
+        
+        topic_id: undefined,
+          
+        
+      });
+      instance.$save().then(function(savedInstance) {
+        expect(savedInstance.id).to.exist;
+      });
+    });
+
+    it("should be able to delete an instance", function() {
+      var succesSpy = sinon.spy(function() {
+        expect(successSpy.calledOnce).to.be.true;
+      });
+      model.delete({id: 1}).then(succesSpy);
+    });
+
+    
+    describe("Query Scope - all", function() {
+      it("should exist", function() {
+        expect(model).to.respondTo("all");
+      });
+
+      
+      it("should return an array of instances", function() {
+        var result = model.all();
+        expect(result).to.be.an.instanceof(Array);
+        expect(result.length).to.be.at.least(1);
+        expect(result[0].id).to.exist;
+      });
+      
+
+      
+
+      it("should accept success callbacks", function() {
+        var successSpy = sinon.spy(function() {
+          expect(succesSpy.calledOnce).to.be.true;
+        });
+        model.all({}, successSpy);
+      });
+    });
+    
+    describe("Query Scope - exact_match", function() {
+      it("should exist", function() {
+        expect(model).to.respondTo("exact_match");
+      });
+
+      
+      it("should return an array of instances", function() {
+        var result = model.exact_match();
+        expect(result).to.be.an.instanceof(Array);
+        expect(result.length).to.be.at.least(1);
+        expect(result[0].id).to.exist;
+      });
+      
+
+      
+
+      it("should accept success callbacks", function() {
+        var successSpy = sinon.spy(function() {
+          expect(succesSpy.calledOnce).to.be.true;
+        });
+        model.exact_match({}, successSpy);
+      });
+    });
+    
+    describe("Query Scope - count", function() {
+      it("should exist", function() {
+        expect(model).to.respondTo("count");
+      });
+
+      
+
+      
+      it("should return an object with a value", function() {
+        var result = model.count();
+        expect(result).to.be.an.instanceof(Object);
+        expect(result.value).to.exist;
+      });
+      
+
+      it("should accept success callbacks", function() {
+        var successSpy = sinon.spy(function() {
+          expect(succesSpy.calledOnce).to.be.true;
+        });
+        model.count({}, successSpy);
+      });
+    });
+    
+    describe("Query Scope - count_exact_match", function() {
+      it("should exist", function() {
+        expect(model).to.respondTo("count_exact_match");
+      });
+
+      
+
+      
+      it("should return an object with a value", function() {
+        var result = model.count_exact_match();
+        expect(result).to.be.an.instanceof(Object);
+        expect(result.value).to.exist;
+      });
+      
+
+      it("should accept success callbacks", function() {
+        var successSpy = sinon.spy(function() {
+          expect(succesSpy.calledOnce).to.be.true;
+        });
+        model.count_exact_match({}, successSpy);
+      });
+    });
+    
+    describe("Query Scope - search_content", function() {
+      it("should exist", function() {
+        expect(model).to.respondTo("search_content");
+      });
+
+      
+      it("should return an array of instances", function() {
+        var result = model.search_content();
+        expect(result).to.be.an.instanceof(Array);
+        expect(result.length).to.be.at.least(1);
+        expect(result[0].id).to.exist;
+      });
+      
+
+      
+
+      it("should accept success callbacks", function() {
+        var successSpy = sinon.spy(function() {
+          expect(succesSpy.calledOnce).to.be.true;
+        });
+        model.search_content({}, successSpy);
+      });
+    });
+    
+    describe("Query Scope - sorted_by_name", function() {
+      it("should exist", function() {
+        expect(model).to.respondTo("sorted_by_name");
+      });
+
+      
+      it("should return an array of instances", function() {
+        var result = model.sorted_by_name();
+        expect(result).to.be.an.instanceof(Array);
+        expect(result.length).to.be.at.least(1);
+        expect(result[0].id).to.exist;
+      });
+      
+
+      
+
+      it("should accept success callbacks", function() {
+        var successSpy = sinon.spy(function() {
+          expect(succesSpy.calledOnce).to.be.true;
+        });
+        model.sorted_by_name({}, successSpy);
+      });
+    });
+    
+    describe("Query Scope - filter_by_category_group", function() {
+      it("should exist", function() {
+        expect(model).to.respondTo("filter_by_category_group");
+      });
+
+      
+      it("should return an array of instances", function() {
+        var result = model.filter_by_category_group();
+        expect(result).to.be.an.instanceof(Array);
+        expect(result.length).to.be.at.least(1);
+        expect(result[0].id).to.exist;
+      });
+      
+
+      
+
+      it("should accept success callbacks", function() {
+        var successSpy = sinon.spy(function() {
+          expect(succesSpy.calledOnce).to.be.true;
+        });
+        model.filter_by_category_group({}, successSpy);
+      });
+    });
+    
+
+    
+    
+      describe("Relationship - Belongs To - Topic", function() {
+
+        it("should have a method to get its owner instance", function() {
+          var instance = model.create({
+            topic_id: "1"
+          });
+          instance.$related.topic(function(result) {
+            expect(result).to.be.an.instanceof(Array);
+          });
+        });
+
+      });
+    
+    
+
+    
+
+    
+  });
+
+})(window.module, window.inject, angular);
