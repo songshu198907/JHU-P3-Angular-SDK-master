@@ -143,6 +143,18 @@
               file_url: false,
               file_type: "Image"
             },
+
+            {
+                name: "post_matched_videos",
+                label: "post_matched_videos",
+
+
+                type: "array",
+                required: false,
+                auto: false,
+                file_url: false,
+                file_type: "Image"
+            },
             
             {
               name: "maternal_video_complete",
@@ -330,6 +342,12 @@
               name: "get_video_survey",
               type: "ObjectQueryScope",
               
+            },
+
+            {
+                name: "get_post_video_survey",
+                type: "ObjectQueryScope",
+
             },
             
             {

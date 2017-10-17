@@ -467,6 +467,17 @@
               file_url: false,
               file_type: "Image"
             },
+            {
+                  name: "created_at",
+                  label: "created_at",
+
+
+                  type: "time",
+                  required: false,
+                  auto: false,
+                  file_url: false,
+                  file_type: "Image"
+            }
             
           ],
 
